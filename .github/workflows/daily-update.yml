@@ -23,11 +23,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run Script 1
-        run: python script1.py
-
-      - name: Run Script 2
-        run: python script2.py
+      - name: Update Models
+        run: python update_model.py
+      
+      - name: Clean Models
+        run: python clean_model.py
 
       - name: Commit changes
         run: |
