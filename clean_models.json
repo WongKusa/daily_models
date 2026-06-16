@@ -913,23 +913,20 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
             "max_tokens",
+            "temperature",
+            "top_p",
             "frequency_penalty",
-            "logit_bias",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
             "stop",
             "top_k",
-            "top_p",
-            "tools",
-            "tool_choice",
-            "response_format",
+            "logit_bias",
             "structured_outputs",
-            "logprobs",
-            "top_logprobs"
+            "response_format",
+            "tools",
+            "tool_choice"
         ]
     },
     "qwen3.6-max-preview": {
@@ -1145,7 +1142,7 @@
         "name": "DeepSeek V4 Flash",
         "author": "deepseek",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -1157,28 +1154,24 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 65536
+            "output": null
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000018",
+            "input": "0.000000098",
+            "output": "0.000000196",
             "input_cache_read": "0.00000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
             "seed",
-            "max_tokens",
-            "logit_bias"
+            "tools",
+            "tool_choice",
+            "response_format"
         ]
     },
     "ling-2.6-1t": {
@@ -1739,8 +1732,8 @@
             "output": null
         },
         "pricing": {
-            "input": "0.000002",
-            "output": "0.000006",
+            "input": "0.00000125",
+            "output": "0.0000025",
             "input_cache_read": "0.0000002",
             "input_cache_write": null
         },
@@ -2491,7 +2484,7 @@
         "name": "Qwen3.5-35B-A3B",
         "author": "qwen",
         "reasoning": true,
-        "tool_call": true,
+        "tool_call": false,
         "release_date": null,
         "modalities": {
             "input": [
@@ -2505,7 +2498,7 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 81920
         },
         "pricing": {
             "input": "0.00000014",
@@ -2516,23 +2509,19 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
             "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
             "frequency_penalty",
-            "logit_bias",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "seed",
-            "stop",
             "top_k",
-            "top_p",
+            "seed",
+            "min_p",
             "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "logit_bias",
+            "structured_outputs"
         ]
     },
     "qwen3.5-27b": {
