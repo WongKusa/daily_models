@@ -545,8 +545,8 @@
             "response_format",
             "stop",
             "structured_outputs",
-            "tool_choice",
-            "tools"
+            "tools",
+            "tool_choice"
         ]
     },
     "claude-opus-4.7-fast": {
@@ -1224,7 +1224,10 @@
             "stop",
             "seed",
             "max_tokens",
-            "logit_bias"
+            "logit_bias",
+            "response_format",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "ling-2.6-1t": {
@@ -1590,7 +1593,9 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "seed"
+            "seed",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gemma-4-26b-a4b-it": {
@@ -1633,7 +1638,8 @@
             "temperature",
             "top_p",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "response_format"
         ]
     },
     "gemma-4-31b-it": {
@@ -2787,7 +2793,6 @@
             "response_format",
             "tools",
             "tool_choice",
-            "stop",
             "structured_outputs"
         ]
     },
@@ -3024,9 +3029,11 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "temperature",
             "structured_outputs",
             "response_format",
-            "tools"
+            "tools",
+            "max_tokens"
         ]
     },
     "minimax-m2.5": {
@@ -3310,10 +3317,12 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "temperature",
             "response_format",
             "structured_outputs",
             "tool_choice",
-            "tools"
+            "tools",
+            "max_tokens"
         ]
     },
     "solar-pro-3": {
@@ -3701,7 +3710,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 65536
+            "output": 65535
         },
         "pricing": {
             "input": "0.0000005",
@@ -3717,8 +3726,8 @@
             "top_p",
             "seed",
             "response_format",
-            "tools",
             "tool_choice",
+            "tools",
             "stop",
             "structured_outputs"
         ]
@@ -4365,7 +4374,11 @@
             "temperature",
             "top_p",
             "frequency_penalty",
-            "stop"
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "intellect-3": {
@@ -7442,7 +7455,9 @@
             "tools",
             "tool_choice",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "gpt-oss-20b": {
@@ -11683,7 +11698,9 @@
             "seed",
             "stop",
             "temperature",
-            "top_p"
+            "top_p",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "gpt-4o-mini-2024-07-18": {
