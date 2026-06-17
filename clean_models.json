@@ -298,7 +298,8 @@
             "logprobs",
             "top_logprobs",
             "response_format",
-            "structured_outputs"
+            "structured_outputs",
+            "tool_choice"
         ]
     },
     "claude-opus-4.8-fast": {
@@ -1191,7 +1192,7 @@
         "name": "DeepSeek V4 Flash",
         "author": "deepseek",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -1227,7 +1228,8 @@
             "logit_bias",
             "response_format",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tools"
         ]
     },
     "ling-2.6-1t": {
@@ -1681,7 +1683,11 @@
             "frequency_penalty",
             "presence_penalty",
             "stop",
-            "seed"
+            "seed",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.6-plus": {
@@ -7498,7 +7504,9 @@
             "temperature",
             "top_p",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "claude-opus-4.1": {
@@ -9535,8 +9543,8 @@
             "presence_penalty",
             "top_k",
             "seed",
-            "response_format",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "gpt-4o-mini-search-preview": {
@@ -10565,8 +10573,8 @@
             "presence_penalty",
             "top_k",
             "seed",
-            "response_format",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "llama-3.3-70b-it": {
@@ -11319,8 +11327,8 @@
             "presence_penalty",
             "top_k",
             "seed",
-            "response_format",
             "structured_outputs",
+            "response_format",
             "tools",
             "tool_choice"
         ]
@@ -11360,8 +11368,8 @@
             "presence_penalty",
             "top_k",
             "seed",
-            "response_format",
             "structured_outputs",
+            "response_format",
             "tools",
             "tool_choice"
         ]
