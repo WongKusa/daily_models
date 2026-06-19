@@ -17,31 +17,34 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 262144
+            "output": 131072
         },
         "pricing": {
-            "input": "0.0000014",
-            "output": "0.0000044",
-            "input_cache_read": "0.00000026",
+            "input": "0.0000012",
+            "output": "0.0000041",
+            "input_cache_read": "0.0000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
             "top_k",
-            "seed",
-            "repetition_penalty",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
-            "min_p",
+            "repetition_penalty",
             "stop",
+            "seed",
+            "max_tokens",
             "logit_bias",
-            "tools",
             "structured_outputs",
-            "response_format"
+            "response_format",
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2.7-code": {
@@ -801,7 +804,9 @@
             "stop",
             "seed",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "mistral-medium-3-5": {
@@ -848,6 +853,79 @@
             "tool_choice"
         ]
     },
+    "laguna-xs.2": {
+        "oid": "poolside/laguna-xs.2",
+        "hf_slug": "poolside/Laguna-XS.2",
+        "name": "Laguna XS.2",
+        "author": "poolside",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 262144,
+            "output": 32768
+        },
+        "pricing": {
+            "input": "0.0000001",
+            "output": "0.0000002",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "temperature",
+            "max_tokens",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "structured_outputs"
+        ]
+    },
+    "laguna-m.1": {
+        "oid": "poolside/laguna-m.1",
+        "hf_slug": "poolside/Laguna-M.1",
+        "name": "Laguna M.1",
+        "author": "poolside",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 262144,
+            "output": 32768
+        },
+        "pricing": {
+            "input": "0.0000002",
+            "output": "0.0000004",
+            "input_cache_read": "0.0000001",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "temperature",
+            "max_tokens",
+            "tools",
+            "tool_choice",
+            "structured_outputs"
+        ]
+    },
     "qwen3.5-plus-20260420": {
         "oid": "qwen/qwen3.5-plus-20260420",
         "hf_slug": null,
@@ -887,7 +965,9 @@
             "response_format",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.6-flash": {
@@ -929,7 +1009,9 @@
             "response_format",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.6-35b-a3b": {
@@ -955,28 +1037,29 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.00000015",
+            "input": "0.00000014",
             "output": "0.000001",
-            "input_cache_read": "0.00000005",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
+            "top_k",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
             "seed",
-            "stop",
-            "top_k",
-            "logit_bias",
-            "structured_outputs",
+            "max_tokens",
             "response_format",
+            "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.6-max-preview": {
@@ -1063,7 +1146,9 @@
             "tools",
             "structured_outputs",
             "response_format",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gpt-5.5-pro": {
@@ -1229,7 +1314,9 @@
             "response_format",
             "logprobs",
             "top_logprobs",
-            "tools"
+            "tools",
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "ling-2.6-1t": {
@@ -1271,7 +1358,9 @@
             "tools",
             "tool_choice",
             "structured_outputs",
-            "response_format"
+            "response_format",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "hy3-preview": {
@@ -1436,7 +1525,9 @@
             "tools",
             "tool_choice",
             "structured_outputs",
-            "response_format"
+            "response_format",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2.6": {
@@ -1458,28 +1549,32 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262142
+            "output": 262144
         },
         "pricing": {
-            "input": "0.00000068",
-            "output": "0.00000341",
-            "input_cache_read": "0.00000034",
+            "input": "0.00000067",
+            "output": "0.0000035",
+            "input_cache_read": "0.0000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
+            "max_tokens",
             "top_p",
-            "top_k",
             "stop",
             "frequency_penalty",
+            "logit_bias",
+            "parallel_tool_calls",
             "presence_penalty",
             "seed",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "response_format"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.7": {
@@ -1729,7 +1824,9 @@
             "response_format",
             "tool_choice",
             "tools",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "trinity-large-thinking": {
@@ -1774,7 +1871,9 @@
             "structured_outputs",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "grok-4.20-multi-agent": {
@@ -1894,7 +1993,11 @@
             "frequency_penalty",
             "tool_choice",
             "tools",
-            "stop"
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "reka-edge": {
@@ -1936,7 +2039,9 @@
             "frequency_penalty",
             "presence_penalty",
             "max_tokens",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "minimax-m2.7": {
@@ -2262,7 +2367,9 @@
             "tools",
             "tool_choice",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "seed-2.0-lite": {
@@ -2552,7 +2659,7 @@
         "name": "Qwen3.5-35B-A3B",
         "author": "qwen",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -2566,30 +2673,32 @@
         },
         "limit": {
             "context": 262144,
-            "output": 81920
+            "output": 262144
         },
         "pricing": {
             "input": "0.00000014",
             "output": "0.000001",
-            "input_cache_read": "0.00000005",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
+            "top_k",
             "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
+            "max_tokens",
+            "structured_outputs",
+            "tools",
             "response_format",
-            "logit_bias",
-            "structured_outputs"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.5-27b": {
@@ -2756,7 +2865,8 @@
             "top_k",
             "repetition_penalty",
             "logit_bias",
-            "min_p"
+            "min_p",
+            "response_format"
         ]
     },
     "gemini-3.1-pro-preview-customtools": {
@@ -3001,7 +3111,9 @@
             "response_format",
             "tool_choice",
             "tools",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.5-397b-a17b": {
@@ -3039,7 +3151,10 @@
             "structured_outputs",
             "response_format",
             "tools",
-            "max_tokens"
+            "max_tokens",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "minimax-m2.5": {
@@ -3165,7 +3280,9 @@
             "response_format",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.6": {
@@ -3245,7 +3362,10 @@
             "seed",
             "tools",
             "tool_choice",
-            "response_format"
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "step-3.5-flash": {
@@ -3328,7 +3448,9 @@
             "structured_outputs",
             "tool_choice",
             "tools",
-            "max_tokens"
+            "max_tokens",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "solar-pro-3": {
@@ -3972,7 +4094,8 @@
             "top_p",
             "seed",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "glm-4.6v": {
@@ -4344,7 +4467,9 @@
             "response_format",
             "structured_outputs",
             "stop",
-            "max_completion_tokens"
+            "max_completion_tokens",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "deepseek-v3.2": {
@@ -5269,7 +5394,9 @@
             "stop",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "nova-premier-v1": {
@@ -5646,20 +5773,20 @@
         "pricing": {
             "input": "0.000000075",
             "output": "0.0000003",
-            "input_cache_read": "0.000000037",
+            "input_cache_read": "0.0000000375",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
             "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "seed",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "frequency_penalty",
+            "presence_penalty",
+            "logit_bias"
         ]
     },
     "qwen3-embedding-8b": {
@@ -5822,7 +5949,10 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "granite-4.0-h-micro": {
@@ -5862,7 +5992,10 @@
             "presence_penalty",
             "min_p",
             "stop",
-            "logit_bias"
+            "logit_bias",
+            "response_format",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "phi-4-mini-it": {
@@ -5902,7 +6035,9 @@
             "frequency_penalty",
             "presence_penalty",
             "stop",
-            "seed"
+            "seed",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-haiku-4.5": {
@@ -5985,7 +6120,9 @@
             "seed",
             "presence_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-vl-8b-it": {
@@ -6207,7 +6344,10 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-vl-30b-a3b-it": {
@@ -6245,7 +6385,10 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gpt-5-pro": {
@@ -6454,7 +6597,11 @@
             "seed",
             "stop",
             "top_k",
-            "logit_bias"
+            "logit_bias",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "relace-apply-3": {
@@ -6570,7 +6717,10 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-vl-235b-a22b-it": {
@@ -6652,7 +6802,10 @@
             "seed",
             "presence_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-coder-plus": {
@@ -6690,7 +6843,9 @@
             "seed",
             "presence_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gpt-5-codex": {
@@ -6811,7 +6966,9 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-next-80b-a3b-thinking": {
@@ -6932,7 +7089,9 @@
             "seed",
             "presence_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2-0905": {
@@ -7020,7 +7179,9 @@
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "hermes-4-70b": {
@@ -7665,7 +7826,11 @@
             "stop",
             "presence_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "glm-4.5": {
@@ -7791,7 +7956,9 @@
             "frequency_penalty",
             "presence_penalty",
             "stop",
-            "seed"
+            "seed",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3-coder": {
@@ -7833,7 +8000,9 @@
             "presence_penalty",
             "stop",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "ui-tars-1.5-7b": {
@@ -7873,7 +8042,10 @@
             "seed",
             "stop",
             "top_k",
-            "logit_bias"
+            "logit_bias",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gemini-2.5-flash-lite": {
@@ -7998,7 +8170,8 @@
             "top_p",
             "stop",
             "top_k",
-            "seed"
+            "seed",
+            "response_format"
         ]
     },
     "kimi-k2": {
@@ -8108,7 +8281,11 @@
         "supported_parameters": [
             "max_tokens",
             "temperature",
-            "stop"
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "morph-v3-fast": {
@@ -8548,7 +8725,9 @@
             "top_k",
             "repetition_penalty",
             "logit_bias",
-            "min_p"
+            "min_p",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "mistral-medium-3": {
@@ -9417,7 +9596,9 @@
             "presence_penalty",
             "min_p",
             "stop",
-            "logit_bias"
+            "logit_bias",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gemma-3-4b-it": {
@@ -9733,7 +9914,11 @@
             "seed",
             "stop",
             "top_k",
-            "logit_bias"
+            "logit_bias",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "sonar-reasoning-pro": {
@@ -10068,7 +10253,9 @@
             "top_k",
             "logit_bias",
             "structured_outputs",
-            "response_format"
+            "response_format",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen-plus": {
@@ -10105,7 +10292,10 @@
             "presence_penalty",
             "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "o3-mini": {
@@ -10420,7 +10610,8 @@
             "logit_bias",
             "top_k",
             "min_p",
-            "seed"
+            "seed",
+            "structured_outputs"
         ]
     },
     "deepseek-chat": {
@@ -10429,7 +10620,7 @@
         "name": "DeepSeek V3",
         "author": "deepseek-ai",
         "reasoning": false,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -10455,7 +10646,11 @@
             "top_p",
             "frequency_penalty",
             "stop",
-            "presence_penalty"
+            "presence_penalty",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "l3.3-euryale-70b": {
@@ -10975,7 +11170,8 @@
             "seed",
             "top_a",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "structured_outputs"
         ]
     },
     "qwen-2.5-7b-it": {
@@ -10984,7 +11180,7 @@
         "name": "Qwen2.5 7B Instruct",
         "author": "qwen",
         "reasoning": false,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -11014,7 +11210,13 @@
             "seed",
             "top_k",
             "min_p",
-            "repetition_penalty"
+            "repetition_penalty",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "inflection-3-productivity": {
@@ -11163,7 +11365,9 @@
             "presence_penalty",
             "min_p",
             "stop",
-            "logit_bias"
+            "logit_bias",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "llama-3.2-1b-it": {
@@ -11968,7 +12172,9 @@
             "top_k",
             "repetition_penalty",
             "logit_bias",
-            "min_p"
+            "min_p",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "llama-3-70b-it": {
@@ -12007,7 +12213,9 @@
             "seed",
             "top_k",
             "repetition_penalty",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "mixtral-8x22b-it": {
@@ -12380,7 +12588,8 @@
             "seed",
             "top_a",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "structured_outputs"
         ]
     },
     "remm-slerp-l2-13b": {
