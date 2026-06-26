@@ -803,7 +803,8 @@
         "modalities": {
             "input": [
                 "text",
-                "image"
+                "image",
+                "file"
             ],
             "output": [
                 "text"
@@ -1358,27 +1359,34 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 65536
         },
         "pricing": {
-            "input": "0.000000089",
-            "output": "0.000000224",
-            "input_cache_read": "0.0000000266",
+            "input": "0.00000009",
+            "output": "0.00000018",
+            "input_cache_read": "0.00000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
             "top_p",
-            "structured_outputs",
-            "tools"
+            "top_k",
+            "min_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
+            "response_format",
+            "logprobs",
+            "top_logprobs",
+            "tools",
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "ling-2.6-1t": {
@@ -2155,8 +2163,8 @@
             "output": 196608
         },
         "pricing": {
-            "input": "0.00000024",
-            "output": "0.00000096",
+            "input": "0.00000018",
+            "output": "0.00000072",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -2432,31 +2440,31 @@
         },
         "limit": {
             "context": 1000000,
-            "output": null
+            "output": 16384
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000045",
+            "input": "0.000000085",
+            "output": "0.0000004",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
             "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "response_format",
             "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
+            "logit_bias"
         ]
     },
     "seed-2.0-lite": {
@@ -3264,30 +3272,24 @@
             "output": 196608
         },
         "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000009",
-            "input_cache_read": "0.00000005",
+            "input": "0.00000012",
+            "output": "0.00000048",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
             "max_tokens",
-            "top_p",
+            "temperature",
             "stop",
-            "frequency_penalty",
-            "logit_bias",
-            "parallel_tool_calls",
-            "presence_penalty",
-            "reasoning_effort",
-            "seed",
+            "top_k",
+            "top_p",
             "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tools",
+            "tool_choice"
         ]
     },
     "glm-5": {
@@ -7606,31 +7608,28 @@
         },
         "limit": {
             "context": 131072,
-            "output": null
+            "output": 131072
         },
         "pricing": {
-            "input": "0.000000039",
-            "output": "0.00000018",
+            "input": "0.00000003",
+            "output": "0.00000015",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
+            "stop",
+            "top_k",
             "top_p",
-            "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs",
+            "tools",
+            "structured_outputs",
             "response_format",
-            "structured_outputs"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gpt-oss-20b": {
