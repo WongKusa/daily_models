@@ -53,10 +53,10 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 32768
+            "output": null
         },
         "pricing": {
-            "input": "0.00000095",
+            "input": "0.00000094",
             "output": "0.000003",
             "input_cache_read": "0.00000018",
             "input_cache_write": null
@@ -64,19 +64,15 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "presence_penalty",
+            "seed",
+            "stop",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
             "response_format",
-            "logit_bias",
-            "structured_outputs",
             "tools",
             "tool_choice"
         ]
@@ -1678,55 +1674,13 @@
             "verbosity"
         ]
     },
-    "claude-opus-4.6-fast": {
-        "oid": "anthropic/claude-opus-4.6-fast",
-        "hf_slug": null,
-        "name": "Claude Opus 4.6 (Fast)",
-        "author": "anthropic",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1000000,
-            "output": 128000
-        },
-        "pricing": {
-            "input": "0.00003",
-            "output": "0.00015",
-            "input_cache_read": "0.000003",
-            "input_cache_write": "0.0000375"
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "top_p",
-            "temperature",
-            "stop",
-            "reasoning",
-            "include_reasoning",
-            "tool_choice",
-            "tools",
-            "structured_outputs",
-            "response_format",
-            "verbosity"
-        ]
-    },
     "glm-5.1": {
         "oid": "z-ai/glm-5.1",
         "hf_slug": "zai-org/GLM-5.1",
         "name": "GLM 5.1",
         "author": "z-ai",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -1741,18 +1695,21 @@
             "output": null
         },
         "pricing": {
-            "input": "0.00000098",
-            "output": "0.00000308",
-            "input_cache_read": "0.000000182",
+            "input": "0.000000975",
+            "output": "0.0000043",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
             "logprobs",
             "top_logprobs"
         ]
@@ -3468,31 +3425,24 @@
         },
         "limit": {
             "context": 262144,
-            "output": 16384
+            "output": 65536
         },
         "pricing": {
-            "input": "0.00000009",
+            "input": "0.0000001",
             "output": "0.0000003",
-            "input_cache_read": "0.00000002",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
             "top_k",
-            "seed",
-            "min_p",
-            "response_format",
-            "logit_bias",
+            "frequency_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "max_tokens"
         ]
     },
     "kimi-k2.5": {
@@ -7114,7 +7064,7 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 100352
         },
         "pricing": {
             "input": "0.0000006",
@@ -8188,7 +8138,7 @@
         },
         "limit": {
             "context": 131072,
-            "output": 32768
+            "output": 100352
         },
         "pricing": {
             "input": "0.00000057",
@@ -9827,7 +9777,9 @@
             "seed",
             "frequency_penalty",
             "presence_penalty",
-            "structured_outputs"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gemma-3-27b-it": {
