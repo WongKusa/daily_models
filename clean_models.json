@@ -1,4 +1,44 @@
 {
+    "claude-sonnet-5": {
+        "oid": "anthropic/claude-sonnet-5",
+        "hf_slug": null,
+        "name": "Claude Sonnet 5",
+        "author": "anthropic",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1000000,
+            "output": 128000
+        },
+        "pricing": {
+            "input": "0.000002",
+            "output": "0.00001",
+            "input_cache_read": "0.0000002",
+            "input_cache_write": "0.0000025"
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "stop",
+            "reasoning",
+            "include_reasoning",
+            "tools",
+            "tool_choice",
+            "structured_outputs",
+            "response_format",
+            "verbosity"
+        ]
+    },
     "fugu-ultra": {
         "oid": "sakana/fugu-ultra",
         "hf_slug": null,
@@ -53,10 +93,10 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 32768
         },
         "pricing": {
-            "input": "0.00000094",
+            "input": "0.00000093",
             "output": "0.000003",
             "input_cache_read": "0.00000018",
             "input_cache_write": null
@@ -64,15 +104,19 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
             "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
             "response_format",
+            "logit_bias",
+            "structured_outputs",
             "tools",
             "tool_choice"
         ]
@@ -1193,8 +1237,8 @@
             "output": 262140
         },
         "pricing": {
-            "input": "0.0000002596",
-            "output": "0.000002385",
+            "input": "0.000000285",
+            "output": "0.0000024",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -1355,34 +1399,24 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 65536
+            "output": null
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000018",
+            "input": "0.000000098",
+            "output": "0.000000196",
             "input_cache_read": "0.00000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
             "seed",
-            "max_tokens",
-            "logit_bias",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "response_format"
         ]
     },
     "ling-2.6-1t": {
@@ -5950,48 +5984,6 @@
             "top_logprobs"
         ]
     },
-    "phi-4-mini-it": {
-        "oid": "microsoft/phi-4-mini-instruct",
-        "hf_slug": "microsoft/Phi-4-mini-instruct",
-        "name": "Phi 4 Mini Instruct",
-        "author": "microsoft",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 128000
-        },
-        "pricing": {
-            "input": "0.00000008",
-            "output": "0.00000035",
-            "input_cache_read": "0.00000008",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "structured_outputs",
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "stop",
-            "seed",
-            "logprobs",
-            "top_logprobs"
-        ]
-    },
     "claude-haiku-4.5": {
         "oid": "anthropic/claude-haiku-4.5",
         "hf_slug": "",
@@ -7869,7 +7861,7 @@
         "name": "Qwen3 235B A22B Thinking 2507",
         "author": "qwen",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -7881,30 +7873,25 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": null
         },
         "pricing": {
-            "input": "0.0000001",
-            "output": "0.0000001",
-            "input_cache_read": "0.0000001",
+            "input": "0.0000001495",
+            "output": "0.000001495",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "structured_outputs",
-            "response_format",
             "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "stop",
             "seed",
-            "logprobs",
-            "top_logprobs"
+            "presence_penalty",
+            "response_format",
+            "tools",
+            "tool_choice"
         ]
     },
     "qwen3-coder": {
@@ -11132,10 +11119,10 @@
             "top_logprobs"
         ]
     },
-    "inflection-3-productivity": {
-        "oid": "inflection/inflection-3-productivity",
+    "inflection-3-pi": {
+        "oid": "inflection/inflection-3-pi",
         "hf_slug": null,
-        "name": "Inflection 3 Productivity",
+        "name": "Inflection 3 Pi",
         "author": "inflection",
         "reasoning": false,
         "tool_call": false,
@@ -11165,10 +11152,10 @@
             "stop"
         ]
     },
-    "inflection-3-pi": {
-        "oid": "inflection/inflection-3-pi",
+    "inflection-3-productivity": {
+        "oid": "inflection/inflection-3-productivity",
         "hf_slug": null,
-        "name": "Inflection 3 Pi",
+        "name": "Inflection 3 Productivity",
         "author": "inflection",
         "reasoning": false,
         "tool_call": false,
@@ -11236,48 +11223,6 @@
             "top_k",
             "min_p",
             "seed"
-        ]
-    },
-    "llama-3.2-3b-it": {
-        "oid": "meta-llama/llama-3.2-3b-instruct",
-        "hf_slug": "meta-llama/Llama-3.2-3B-Instruct",
-        "name": "Llama 3.2 3B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 80000
-        },
-        "pricing": {
-            "input": "0.0000000509",
-            "output": "0.000000335",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs"
         ]
     },
     "llama-3.2-1b-it": {
@@ -11360,6 +11305,48 @@
             "min_p",
             "response_format",
             "logit_bias"
+        ]
+    },
+    "llama-3.2-3b-it": {
+        "oid": "meta-llama/llama-3.2-3b-instruct",
+        "hf_slug": "meta-llama/Llama-3.2-3B-Instruct",
+        "name": "Llama 3.2 3B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 80000
+        },
+        "pricing": {
+            "input": "0.0000000509",
+            "output": "0.000000335",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "seed",
+            "repetition_penalty",
+            "frequency_penalty",
+            "presence_penalty",
+            "min_p",
+            "stop",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen-2.5-72b-it": {
@@ -11825,50 +11812,6 @@
             "structured_outputs"
         ]
     },
-    "gpt-4o-mini": {
-        "oid": "openai/gpt-4o-mini",
-        "hf_slug": null,
-        "name": "GPT-4o-mini",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000006",
-            "input_cache_read": "0.000000075",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
-        ]
-    },
     "gpt-4o-mini-2024-07-18": {
         "oid": "openai/gpt-4o-mini-2024-07-18",
         "hf_slug": null,
@@ -11913,6 +11856,50 @@
             "top_logprobs",
             "tools",
             "tool_choice"
+        ]
+    },
+    "gpt-4o-mini": {
+        "oid": "openai/gpt-4o-mini",
+        "hf_slug": null,
+        "name": "GPT-4o-mini",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.00000015",
+            "output": "0.0000006",
+            "input_cache_read": "0.000000075",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "gemma-2-27b-it": {
