@@ -128,12 +128,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 32768
+            "output": 128000
         },
         "pricing": {
-            "input": "0.00000093",
-            "output": "0.000003",
-            "input_cache_read": "0.00000018",
+            "input": "0.00000091",
+            "output": "0.00000286",
+            "input_cache_read": "0.000000169",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -142,18 +142,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
             "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format",
-            "logit_bias",
-            "structured_outputs",
+            "stop",
+            "tool_choice",
             "tools",
-            "tool_choice"
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2.7-code": {
@@ -1275,7 +1271,7 @@
         "pricing": {
             "input": "0.000000285",
             "output": "0.0000024",
-            "input_cache_read": null,
+            "input_cache_read": "0.00000015",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1435,10 +1431,10 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 16384
         },
         "pricing": {
-            "input": "0.000000089",
+            "input": "0.00000009",
             "output": "0.00000018",
             "input_cache_read": "0.000000018",
             "input_cache_write": null
@@ -1446,16 +1442,21 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
             "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "response_format",
+            "tools",
+            "tool_choice",
             "structured_outputs",
-            "tools"
+            "logit_bias"
         ]
     },
     "ling-2.6-1t": {
@@ -2471,31 +2472,31 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 16384
+            "output": null
         },
         "pricing": {
-            "input": "0.000000085",
-            "output": "0.0000004",
+            "input": "0.00000008",
+            "output": "0.00000045",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "presence_penalty",
+            "seed",
+            "stop",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format",
             "tools",
             "tool_choice",
-            "logit_bias"
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "seed-2.0-lite": {
