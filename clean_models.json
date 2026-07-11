@@ -561,34 +561,29 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 101376
+            "output": 131072
         },
         "pricing": {
-            "input": "0.00000054",
-            "output": "0.00000176",
-            "input_cache_read": "0.0000001",
+            "input": "0.00000042",
+            "output": "0.00000132",
+            "input_cache_read": "0.000000078",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
             "max_tokens",
-            "frequency_penalty",
-            "logit_bias",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "top_k",
+            "temperature",
             "top_p",
-            "response_format",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "kimi-k2.7-code": {
@@ -1840,12 +1835,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 65536
+            "output": 384000
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000018",
-            "input_cache_read": "0.000000018",
+            "input": "0.000000084",
+            "output": "0.000000168",
+            "input_cache_read": "0.0000000168",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1854,18 +1849,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
             "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
+            "stop",
             "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "structured_outputs",
-            "logit_bias"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "ling-2.6-1t": {
@@ -4839,49 +4830,6 @@
             "tool_choice"
         ]
     },
-    "trinity-mini": {
-        "oid": "arcee-ai/trinity-mini",
-        "hf_slug": "arcee-ai/Trinity-Mini",
-        "name": "Trinity Mini",
-        "author": "arcee-ai",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 131072
-        },
-        "pricing": {
-            "input": "0.000000045",
-            "output": "0.00000015",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "temperature",
-            "max_tokens",
-            "top_k",
-            "top_p",
-            "tool_choice",
-            "tools",
-            "response_format",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "stop",
-            "max_completion_tokens"
-        ]
-    },
     "deepseek-v3.2": {
         "oid": "deepseek/deepseek-v3.2",
         "hf_slug": "deepseek-ai/DeepSeek-V3.2",
@@ -4903,9 +4851,9 @@
             "output": 64000
         },
         "pricing": {
-            "input": "0.0000002288",
-            "output": "0.0000003432",
-            "input_cache_read": "0.00000002288",
+            "input": "0.0000002145",
+            "output": "0.00000032175",
+            "input_cache_read": "0.00000002145",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -12280,47 +12228,6 @@
             "structured_outputs",
             "tools",
             "tool_choice"
-        ]
-    },
-    "llama-3-8b-it": {
-        "oid": "meta-llama/llama-3-8b-instruct",
-        "hf_slug": "meta-llama/Meta-Llama-3-8B-Instruct",
-        "name": "Llama 3 8B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 8192,
-            "output": null
-        },
-        "pricing": {
-            "input": "0.00000014",
-            "output": "0.00000014",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "top_k",
-            "repetition_penalty",
-            "logit_bias",
-            "min_p",
-            "response_format",
-            "structured_outputs"
         ]
     },
     "mixtral-8x22b-it": {
