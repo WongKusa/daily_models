@@ -643,12 +643,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 128000
+            "output": 32768
         },
         "pricing": {
-            "input": "0.0000009058",
-            "output": "0.0000028468",
-            "input_cache_read": "0.00000016822",
+            "input": "0.00000093",
+            "output": "0.000003",
+            "input_cache_read": "0.00000018",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -657,14 +657,18 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "frequency_penalty",
             "stop",
-            "tool_choice",
-            "tools",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
             "response_format",
+            "logit_bias",
             "structured_outputs",
-            "logprobs",
-            "top_logprobs"
+            "tools",
+            "tool_choice"
         ]
     },
     "kimi-k2.7-code": {
@@ -940,13 +944,13 @@
             ]
         },
         "limit": {
-            "context": 256000,
-            "output": 256000
+            "context": 262144,
+            "output": 262144
         },
         "pricing": {
-            "input": "0.0000002",
-            "output": "0.00000115",
-            "input_cache_read": "0.00000004",
+            "input": "0.00000019",
+            "output": "0.00000114",
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -954,15 +958,15 @@
             "include_reasoning",
             "temperature",
             "max_tokens",
-            "tools",
             "top_p",
-            "stop",
             "frequency_penalty",
-            "logprobs",
-            "top_logprobs",
+            "stop",
             "response_format",
             "structured_outputs",
-            "tool_choice"
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.8-fast": {
@@ -1068,10 +1072,10 @@
             "output": 65536
         },
         "pricing": {
-            "input": "0.00000125",
-            "output": "0.00000375",
-            "input_cache_read": "0.00000025",
-            "input_cache_write": "0.0000015625"
+            "input": "0.000001475",
+            "output": "0.000004425",
+            "input_cache_read": "0.000000295",
+            "input_cache_write": "0.00000184375"
         },
         "supported_parameters": [
             "reasoning",
@@ -1647,7 +1651,7 @@
         "name": "Qwen3.6 35B A3B",
         "author": "qwen",
         "reasoning": true,
-        "tool_call": true,
+        "tool_call": false,
         "release_date": null,
         "modalities": {
             "input": [
@@ -1661,10 +1665,10 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": null
         },
         "pricing": {
-            "input": "0.00000014",
+            "input": "0.00000013",
             "output": "0.000001",
             "input_cache_read": null,
             "input_cache_write": null
@@ -1672,21 +1676,16 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "presence_penalty",
+            "seed",
+            "stop",
             "temperature",
             "top_p",
-            "top_k",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "max_tokens",
             "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "structured_outputs"
         ]
     },
     "qwen3.6-max-preview": {
@@ -1751,12 +1750,12 @@
         },
         "limit": {
             "context": 262144,
-            "output": 131072
+            "output": 262140
         },
         "pricing": {
-            "input": "0.000000289",
-            "output": "0.0000024",
-            "input_cache_read": null,
+            "input": "0.00000028215",
+            "output": "0.000002376",
+            "input_cache_read": "0.000000141075",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1764,18 +1763,15 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "stop",
             "top_p",
             "top_k",
-            "min_p",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
             "seed",
-            "logit_bias",
-            "response_format",
-            "structured_outputs",
             "tools",
+            "structured_outputs",
+            "response_format",
             "tool_choice",
             "logprobs",
             "top_logprobs"
@@ -1997,7 +1993,7 @@
         "name": "MiMo-V2.5-Pro",
         "author": "xiaomi",
         "reasoning": true,
-        "tool_call": true,
+        "tool_call": false,
         "release_date": null,
         "modalities": {
             "input": [
@@ -2008,13 +2004,13 @@
             ]
         },
         "limit": {
-            "context": 1048576,
-            "output": 131072
+            "context": 1050000,
+            "output": null
         },
         "pricing": {
-            "input": "0.000000435",
-            "output": "0.00000087",
-            "input_cache_read": "0.0000000036",
+            "input": "0.000000348",
+            "output": "0.000000696",
+            "input_cache_read": "0.000000003",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2023,12 +2019,8 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice"
+            "seed",
+            "response_format"
         ]
     },
     "mimo-v2.5": {
@@ -2878,7 +2870,7 @@
             ]
         },
         "limit": {
-            "context": 262144,
+            "context": 202752,
             "output": 131072
         },
         "pricing": {
@@ -2893,17 +2885,10 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "seed",
-            "logit_bias",
-            "response_format",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format",
+            "top_k"
         ]
     },
     "nemotron-3-super-120b-a12b": {
@@ -8042,6 +8027,7 @@
             "frequency_penalty",
             "presence_penalty",
             "seed",
+            "prediction",
             "tools",
             "tool_choice"
         ]
@@ -9141,45 +9127,6 @@
             "min_p",
             "tools",
             "tool_choice"
-        ]
-    },
-    "coder-large": {
-        "oid": "arcee-ai/coder-large",
-        "hf_slug": "",
-        "name": "Coder Large",
-        "author": "arcee-ai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 32768,
-            "output": null
-        },
-        "pricing": {
-            "input": "0.0000005",
-            "output": "0.0000008",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "top_k",
-            "repetition_penalty",
-            "logit_bias",
-            "min_p"
         ]
     },
     "llama-guard-4-12b": {
@@ -11137,6 +11084,7 @@
             "logit_bias",
             "logprobs",
             "top_logprobs",
+            "prediction",
             "tools",
             "tool_choice"
         ]
@@ -12093,6 +12041,7 @@
             "logit_bias",
             "logprobs",
             "top_logprobs",
+            "prediction",
             "tools",
             "tool_choice"
         ]
