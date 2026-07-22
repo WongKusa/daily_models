@@ -1,4 +1,125 @@
 {
+    "laguna-s-2.1": {
+        "oid": "poolside/laguna-s-2.1",
+        "hf_slug": "poolside/Laguna-S-2.1",
+        "name": "Laguna S 2.1",
+        "author": "poolside",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1048576,
+            "output": 131072
+        },
+        "pricing": {
+            "input": "0.0000001",
+            "output": "0.0000002",
+            "input_cache_read": "0.00000001",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "tools",
+            "tool_choice",
+            "temperature",
+            "stop",
+            "max_tokens"
+        ]
+    },
+    "gemini-3.6-flash": {
+        "oid": "google/gemini-3.6-flash",
+        "hf_slug": null,
+        "name": "Gemini 3.6 Flash",
+        "author": "google",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "video",
+                "file",
+                "audio"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1048576,
+            "output": 65536
+        },
+        "pricing": {
+            "input": "0.0000015",
+            "output": "0.0000075",
+            "input_cache_read": "0.00000015",
+            "input_cache_write": "0.00000008333333333333334"
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "seed",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "gemini-3.5-flash-lite": {
+        "oid": "google/gemini-3.5-flash-lite",
+        "hf_slug": null,
+        "name": "Gemini 3.5 Flash-Lite",
+        "author": "google",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "video",
+                "file",
+                "audio"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1048576,
+            "output": 65536
+        },
+        "pricing": {
+            "input": "0.0000003",
+            "output": "0.0000025",
+            "input_cache_read": "0.00000003",
+            "input_cache_write": "0.00000008333333333333334"
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "seed",
+            "response_format",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+        ]
+    },
     "longcat-2.0": {
         "oid": "meituan/longcat-2.0",
         "hf_slug": "meituan-longcat/LongCat-2.0",
@@ -62,7 +183,7 @@
             ]
         },
         "limit": {
-            "context": 1048576,
+            "context": 524288,
             "output": null
         },
         "pricing": {
@@ -614,7 +735,7 @@
         "name": "Hy3",
         "author": "tencent",
         "reasoning": true,
-        "tool_call": true,
+        "tool_call": false,
         "release_date": null,
         "modalities": {
             "input": [
@@ -626,25 +747,22 @@
         },
         "limit": {
             "context": 262144,
-            "output": 128000
+            "output": null
         },
         "pricing": {
-            "input": "0.000000132",
-            "output": "0.000000528",
-            "input_cache_read": "0.000000033",
+            "input": "0.0000001288",
+            "output": "0.0000005336",
+            "input_cache_read": "0.0000000322",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
-            "stop",
-            "max_completion_tokens",
-            "reasoning_effort",
             "max_tokens",
-            "response_format",
-            "tools",
-            "tool_choice"
+            "temperature",
+            "top_p",
+            "seed",
+            "response_format"
         ]
     },
     "laguna-xs-2.1": {
@@ -819,12 +937,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 32768
+            "output": 131072
         },
         "pricing": {
-            "input": "0.00000093",
-            "output": "0.000003",
-            "input_cache_read": "0.00000018",
+            "input": "0.0000008218",
+            "output": "0.0000025828",
+            "input_cache_read": "0.00000015262",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -836,15 +954,12 @@
             "stop",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
-            "response_format",
-            "logit_bias",
-            "structured_outputs",
+            "top_k",
+            "repetition_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "kimi-k2.7-code": {
@@ -924,14 +1039,16 @@
             "input_cache_write": "0.0000125"
         },
         "supported_parameters": [
-            "max_tokens",
-            "stop",
             "reasoning",
             "include_reasoning",
-            "tool_choice",
+            "structured_outputs",
+            "max_tokens",
+            "max_completion_tokens",
             "tools",
+            "tool_choice",
             "response_format",
-            "verbosity"
+            "verbosity",
+            "stop"
         ]
     },
     "nex-n2-pro": {
@@ -991,7 +1108,7 @@
             ]
         },
         "limit": {
-            "context": 1000000,
+            "context": 512288,
             "output": 16384
         },
         "pricing": {
@@ -1126,7 +1243,7 @@
             ]
         },
         "limit": {
-            "context": 256000,
+            "context": 262144,
             "output": 256000
         },
         "pricing": {
@@ -2228,7 +2345,7 @@
             ]
         },
         "limit": {
-            "context": 1048576,
+            "context": 1050000,
             "output": null
         },
         "pricing": {
@@ -2399,7 +2516,7 @@
             ]
         },
         "limit": {
-            "context": 202752,
+            "context": 204800,
             "output": 128000
         },
         "pricing": {
@@ -2747,7 +2864,7 @@
             ]
         },
         "limit": {
-            "context": 256000,
+            "context": 262144,
             "output": 80000
         },
         "pricing": {
@@ -3608,7 +3725,7 @@
             ]
         },
         "limit": {
-            "context": 1048756,
+            "context": 1048576,
             "output": 65536
         },
         "pricing": {
@@ -3855,7 +3972,7 @@
             ]
         },
         "limit": {
-            "context": 256000,
+            "context": 262144,
             "output": null
         },
         "pricing": {
@@ -3942,7 +4059,7 @@
             ]
         },
         "limit": {
-            "context": 202752,
+            "context": 204800,
             "output": 128000
         },
         "pricing": {
@@ -4504,7 +4621,7 @@
             ]
         },
         "limit": {
-            "context": 202752,
+            "context": 204800,
             "output": 131072
         },
         "pricing": {
@@ -5121,7 +5238,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 163840,
             "output": 64000
         },
         "pricing": {
@@ -5247,7 +5364,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5287,7 +5404,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5327,7 +5444,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5367,7 +5484,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5407,7 +5524,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5447,7 +5564,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5487,7 +5604,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5527,7 +5644,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5567,7 +5684,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5607,7 +5724,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5647,7 +5764,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 8194,
             "output": null
         },
         "pricing": {
@@ -5687,7 +5804,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -5727,7 +5844,7 @@
             ]
         },
         "limit": {
-            "context": 8192,
+            "context": 512,
             "output": null
         },
         "pricing": {
@@ -6397,7 +6514,7 @@
             ]
         },
         "limit": {
-            "context": 32000,
+            "context": 32768,
             "output": 32000
         },
         "pricing": {
@@ -6514,7 +6631,7 @@
             ]
         },
         "limit": {
-            "context": 262144,
+            "context": 131072,
             "output": 32768
         },
         "pricing": {
@@ -6638,7 +6755,7 @@
             ]
         },
         "limit": {
-            "context": 256000,
+            "context": 131072,
             "output": 32768
         },
         "pricing": {
@@ -6681,7 +6798,7 @@
             ]
         },
         "limit": {
-            "context": 256000,
+            "context": 262144,
             "output": 32768
         },
         "pricing": {
@@ -6816,7 +6933,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 262144,
             "output": 32768
         },
         "pricing": {
@@ -6938,7 +7055,7 @@
             ]
         },
         "limit": {
-            "context": 200000,
+            "context": 204800,
             "output": 16384
         },
         "pricing": {
@@ -7597,7 +7714,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 81920,
             "output": 32768
         },
         "pricing": {
@@ -8204,7 +8321,7 @@
             ]
         },
         "limit": {
-            "context": 160000,
+            "context": 262144,
             "output": 32768
         },
         "pricing": {
@@ -8246,7 +8363,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 262144,
             "output": 32000
         },
         "pricing": {
@@ -8406,7 +8523,7 @@
             ]
         },
         "limit": {
-            "context": 1048576,
+            "context": 262144,
             "output": 65536
         },
         "pricing": {
@@ -8765,7 +8882,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 123000,
             "output": 16000
         },
         "pricing": {
@@ -8806,7 +8923,7 @@
             ]
         },
         "limit": {
-            "context": 128000,
+            "context": 256000,
             "output": 16384
         },
         "pricing": {
@@ -9302,7 +9419,7 @@
             ]
         },
         "limit": {
-            "context": 163840,
+            "context": 1048576,
             "output": 16384
         },
         "pricing": {
@@ -9427,7 +9544,7 @@
             ]
         },
         "limit": {
-            "context": 131702,
+            "context": 131072,
             "output": 40960
         },
         "pricing": {
@@ -9833,7 +9950,7 @@
             ]
         },
         "limit": {
-            "context": 10000000,
+            "context": 1310720,
             "output": 16384
         },
         "pricing": {
@@ -10235,7 +10352,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 262144,
             "output": 16384
         },
         "pricing": {
@@ -10548,7 +10665,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 128000,
             "output": null
         },
         "pricing": {
@@ -10747,7 +10864,7 @@
             ]
         },
         "limit": {
-            "context": 128000,
+            "context": 8192,
             "output": 8192
         },
         "pricing": {
@@ -10906,7 +11023,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 163840,
             "output": 16000
         },
         "pricing": {
@@ -11302,7 +11419,7 @@
             ]
         },
         "limit": {
-            "context": 128000,
+            "context": 32768,
             "output": 32768
         },
         "pricing": {
@@ -11385,7 +11502,7 @@
             ]
         },
         "limit": {
-            "context": 32768,
+            "context": 16384,
             "output": 2048
         },
         "pricing": {
@@ -11430,7 +11547,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 32768,
             "output": 32768
         },
         "pricing": {
@@ -11458,10 +11575,10 @@
             "top_logprobs"
         ]
     },
-    "inflection-3-productivity": {
-        "oid": "inflection/inflection-3-productivity",
+    "inflection-3-pi": {
+        "oid": "inflection/inflection-3-pi",
         "hf_slug": null,
-        "name": "Inflection 3 Productivity",
+        "name": "Inflection 3 Pi",
         "author": "inflection",
         "reasoning": false,
         "tool_call": false,
@@ -11491,10 +11608,10 @@
             "stop"
         ]
     },
-    "inflection-3-pi": {
-        "oid": "inflection/inflection-3-pi",
+    "inflection-3-productivity": {
+        "oid": "inflection/inflection-3-productivity",
         "hf_slug": null,
-        "name": "Inflection 3 Pi",
+        "name": "Inflection 3 Productivity",
         "author": "inflection",
         "reasoning": false,
         "tool_call": false,
@@ -11567,6 +11684,46 @@
             "top_logprobs"
         ]
     },
+    "llama-3.2-1b-it": {
+        "oid": "meta-llama/llama-3.2-1b-instruct",
+        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
+        "name": "Llama 3.2 1B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 60000,
+            "output": 60000
+        },
+        "pricing": {
+            "input": "0.000000027",
+            "output": "0.000000201",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "seed",
+            "repetition_penalty",
+            "frequency_penalty",
+            "presence_penalty",
+            "min_p",
+            "stop",
+            "logit_bias"
+        ]
+    },
     "llama-3.2-3b-it": {
         "oid": "meta-llama/llama-3.2-3b-instruct",
         "hf_slug": "meta-llama/Llama-3.2-3B-Instruct",
@@ -11609,46 +11766,6 @@
             "top_logprobs"
         ]
     },
-    "llama-3.2-1b-it": {
-        "oid": "meta-llama/llama-3.2-1b-instruct",
-        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
-        "name": "Llama 3.2 1B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 60000
-        },
-        "pricing": {
-            "input": "0.000000027",
-            "output": "0.000000201",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias"
-        ]
-    },
     "qwen-2.5-72b-it": {
         "oid": "qwen/qwen-2.5-72b-instruct",
         "hf_slug": "Qwen/Qwen2.5-72B-Instruct",
@@ -11666,7 +11783,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 32768,
             "output": 16384
         },
         "pricing": {
@@ -12392,7 +12509,7 @@
             ]
         },
         "limit": {
-            "context": 65536,
+            "context": 65535,
             "output": 8000
         },
         "pricing": {
@@ -12770,7 +12887,7 @@
             ]
         },
         "limit": {
-            "context": 4096,
+            "context": 8192,
             "output": 4096
         },
         "pricing": {
@@ -12792,49 +12909,6 @@
             "top_logprobs",
             "repetition_penalty",
             "seed"
-        ]
-    },
-    "gpt-4": {
-        "oid": "openai/gpt-4",
-        "hf_slug": null,
-        "name": "GPT-4",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 8191,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.00003",
-            "output": "0.00006",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "tools",
-            "tool_choice"
         ]
     },
     "gpt-3.5-turbo": {
@@ -12860,6 +12934,49 @@
         "pricing": {
             "input": "0.0000005",
             "output": "0.0000015",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "gpt-4": {
+        "oid": "openai/gpt-4",
+        "hf_slug": null,
+        "name": "GPT-4",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8191,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.00003",
+            "output": "0.00006",
             "input_cache_read": null,
             "input_cache_write": null
         },
