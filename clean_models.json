@@ -481,8 +481,7 @@
             "logprobs",
             "top_logprobs",
             "tools",
-            "tool_choice",
-            "structured_outputs"
+            "tool_choice"
         ]
     },
     "muse-spark-1.1": {
@@ -1172,12 +1171,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 262144
+            "output": 128000
         },
         "pricing": {
-            "input": "0.00000076",
-            "output": "0.00000242",
-            "input_cache_read": "0.00000014",
+            "input": "0.0000006769",
+            "output": "0.0000021274",
+            "input_cache_read": "0.00000012571",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1186,18 +1185,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "repetition_penalty",
             "frequency_penalty",
-            "presence_penalty",
             "stop",
-            "seed",
-            "response_format",
-            "tools",
             "tool_choice",
+            "tools",
+            "response_format",
+            "structured_outputs",
             "logprobs",
-            "top_logprobs",
-            "structured_outputs"
+            "top_logprobs"
         ]
     },
     "kimi-k2.7-code": {
@@ -1602,10 +1597,10 @@
             "output": 65536
         },
         "pricing": {
-            "input": "0.00000125",
-            "output": "0.00000375",
-            "input_cache_read": "0.00000025",
-            "input_cache_write": "0.0000015625"
+            "input": "0.000001475",
+            "output": "0.000004425",
+            "input_cache_read": "0.000000295",
+            "input_cache_write": "0.00000184375"
         },
         "supported_parameters": [
             "reasoning",
@@ -2218,10 +2213,10 @@
             "output": 65536
         },
         "pricing": {
-            "input": "0.00000104",
-            "output": "0.00000624",
+            "input": "0.000001027",
+            "output": "0.000006162",
             "input_cache_read": null,
-            "input_cache_write": "0.0000013"
+            "input_cache_write": "0.00000128375"
         },
         "supported_parameters": [
             "reasoning",
@@ -9787,7 +9782,7 @@
         },
         "pricing": {
             "input": "0.0000001",
-            "output": "0.00000024",
+            "output": "0.00000022",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -11729,8 +11724,8 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.00000004",
-            "output": "0.0000001",
+            "input": "0.0000001",
+            "output": "0.0000002",
             "input_cache_read": null,
             "input_cache_write": null
         },
