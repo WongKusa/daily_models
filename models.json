@@ -1,4 +1,98 @@
 {
+    "tencent/hy-mt2-1.8b": {
+        "hf_slug": "tencent/Hy-MT2-1.8B",
+        "name": "Hy-MT2-1.8B",
+        "author": "tencent",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8192,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.000000044",
+            "output": "0.000000177",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "temperature",
+            "stop",
+            "max_completion_tokens",
+            "max_tokens"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "tencent/hy-mt2-30b-a3b": {
+        "hf_slug": "tencent/Hy-MT2-30B-A3B",
+        "name": "Hy-MT2-30B-A3B",
+        "author": "tencent",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8192,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.000000074",
+            "output": "0.000000295",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "temperature",
+            "stop",
+            "max_completion_tokens",
+            "max_tokens",
+            "response_format",
+            "structured_outputs"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
     "z-ai/glm-5.3": {
         "hf_slug": null,
         "name": "GLM 5.3",
@@ -49,7 +143,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -112,7 +206,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -171,7 +265,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -212,7 +306,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -267,7 +361,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -289,7 +383,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 52429
+            "output": 131072
         },
         "pricing": {
             "input": "0.000002",
@@ -300,15 +394,21 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "structured_outputs",
-            "response_format",
-            "logprobs",
-            "top_logprobs"
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -324,7 +424,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -383,7 +483,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -440,7 +540,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -501,7 +601,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -522,7 +622,7 @@
             ]
         },
         "limit": {
-            "context": 1000000,
+            "context": 262144,
             "output": 131072
         },
         "pricing": {
@@ -545,10 +645,10 @@
             "seed",
             "min_p",
             "response_format",
-            "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -560,7 +660,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -613,7 +713,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -666,7 +766,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -694,7 +794,7 @@
         "pricing": {
             "input": "0.0000003",
             "output": "0.0000011",
-            "input_cache_read": null,
+            "input_cache_read": "0.00000004",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -703,18 +803,17 @@
             "max_tokens",
             "temperature",
             "top_p",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
             "seed",
-            "stop",
             "top_k",
-            "logit_bias",
-            "response_format",
+            "min_p",
+            "repetition_penalty",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "response_format"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -731,7 +830,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -794,7 +893,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -860,7 +959,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -882,31 +981,28 @@
         },
         "limit": {
             "context": 1310720,
-            "output": 1048576
+            "output": 262144
         },
         "pricing": {
             "input": "0.000000065",
-            "output": "0.00000018",
-            "input_cache_read": "0.00000002",
+            "output": "0.00000014",
+            "input_cache_read": "0.000000014",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
             "temperature",
-            "top_p",
-            "top_k",
-            "frequency_penalty",
-            "presence_penalty",
+            "max_tokens",
             "stop",
             "seed",
-            "max_tokens",
+            "top_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "structured_outputs",
             "response_format",
             "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs"
+            "tool_choice"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -922,7 +1018,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -945,7 +1041,7 @@
             ]
         },
         "limit": {
-            "context": 524288,
+            "context": 1048576,
             "output": 262144
         },
         "pricing": {
@@ -967,10 +1063,10 @@
             "top_k",
             "seed",
             "min_p",
-            "logit_bias",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -989,7 +1085,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1045,7 +1141,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1087,7 +1183,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1128,7 +1224,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1169,7 +1265,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1210,7 +1306,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1269,7 +1365,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1302,15 +1398,15 @@
             "input_cache_write": "0.00000625"
         },
         "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
             "max_tokens",
             "stop",
+            "reasoning",
+            "include_reasoning",
             "tool_choice",
             "tools",
+            "structured_outputs",
             "response_format",
-            "verbosity",
-            "structured_outputs"
+            "verbosity"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -1328,7 +1424,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1385,7 +1481,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1433,7 +1529,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1471,12 +1567,13 @@
             "reasoning",
             "include_reasoning",
             "max_tokens",
+            "temperature",
+            "top_p",
             "seed",
             "response_format",
-            "stop",
             "structured_outputs",
-            "tools",
-            "tool_choice"
+            "tool_choice",
+            "tools"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -1493,7 +1590,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1554,7 +1651,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1611,7 +1708,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1676,7 +1773,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1738,7 +1835,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1801,7 +1898,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1854,7 +1951,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1907,7 +2004,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1940,10 +2037,10 @@
             "input_cache_write": "0.00000025"
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -1966,7 +2063,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -1999,10 +2096,10 @@
             "input_cache_write": "0.00000025"
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -2025,7 +2122,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2033,65 +2130,6 @@
     "openai/gpt-5.6-terra-pro": {
         "hf_slug": null,
         "name": "GPT-5.6 Terra Pro",
-        "author": "openai",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "file",
-                "image",
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1050000,
-            "output": 128000
-        },
-        "pricing": {
-            "input": "0.000002",
-            "output": "0.000012",
-            "input_cache_read": "0.0000002",
-            "input_cache_write": "0.0000025"
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
-        ],
-        "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": false,
-            "supports_reasoning_effort": true,
-            "supported_reasoning_efforts": [
-                "high",
-                "low",
-                "medium",
-                "none",
-                "xhigh",
-                "max"
-            ],
-            "default_reasoning_effort": "medium",
-            "reasoning_return_mechanism": null
-        },
-        "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
-            "source": "openrouter",
-            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
-        }
-    },
-    "openai/gpt-5.6-terra": {
-        "hf_slug": null,
-        "name": "GPT-5.6 Terra",
         "author": "openai",
         "reasoning": true,
         "tool_call": true,
@@ -2143,7 +2181,66 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "openai/gpt-5.6-terra": {
+        "hf_slug": null,
+        "name": "GPT-5.6 Terra",
+        "author": "openai",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "file",
+                "image",
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1050000,
+            "output": 128000
+        },
+        "pricing": {
+            "input": "0.000002",
+            "output": "0.000012",
+            "input_cache_read": "0.0000002",
+            "input_cache_write": "0.0000025"
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+                "high",
+                "low",
+                "medium",
+                "none",
+                "xhigh",
+                "max"
+            ],
+            "default_reasoning_effort": "medium",
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2202,7 +2299,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2261,7 +2358,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2321,7 +2418,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2371,7 +2468,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2421,7 +2518,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2474,7 +2571,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2522,7 +2619,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2559,8 +2656,8 @@
             "stop",
             "reasoning",
             "include_reasoning",
-            "tool_choice",
             "tools",
+            "tool_choice",
             "structured_outputs",
             "response_format",
             "verbosity"
@@ -2581,7 +2678,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2636,7 +2733,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2689,7 +2786,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2710,7 +2807,7 @@
             ]
         },
         "limit": {
-            "context": 512000,
+            "context": 1048575,
             "output": null
         },
         "pricing": {
@@ -2750,7 +2847,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2809,7 +2906,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2842,15 +2939,15 @@
             "input_cache_write": "0.0000125"
         },
         "supported_parameters": [
-            "max_tokens",
-            "stop",
             "reasoning",
             "include_reasoning",
+            "max_tokens",
+            "stop",
             "tool_choice",
             "tools",
-            "structured_outputs",
             "response_format",
-            "verbosity"
+            "verbosity",
+            "structured_outputs"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -2868,7 +2965,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2921,7 +3018,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -2982,7 +3079,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3041,7 +3138,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3101,7 +3198,7 @@
             "reasoning_return_mechanism": "content-string"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3162,7 +3259,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3221,7 +3318,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3254,15 +3351,14 @@
             "input_cache_write": "0.00000625"
         },
         "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
             "max_tokens",
             "stop",
+            "reasoning",
+            "include_reasoning",
             "tool_choice",
             "tools",
             "response_format",
-            "verbosity",
-            "structured_outputs"
+            "verbosity"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -3280,7 +3376,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3338,7 +3434,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3394,7 +3490,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3445,7 +3541,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3487,10 +3583,9 @@
             "top_p",
             "seed",
             "response_format",
-            "stop",
             "structured_outputs",
-            "tools",
-            "tool_choice"
+            "tool_choice",
+            "tools"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -3507,7 +3602,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3566,7 +3661,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3619,7 +3714,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3678,7 +3773,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3740,7 +3835,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3801,7 +3896,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3858,7 +3953,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3918,7 +4013,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -3978,7 +4073,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4038,7 +4133,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4062,24 +4157,30 @@
         },
         "limit": {
             "context": 262144,
-            "output": 65536
+            "output": 8192
         },
         "pricing": {
-            "input": "0.000000098",
-            "output": "0.00000095",
+            "input": "0.00000008",
+            "output": "0.00000075",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
             "frequency_penalty",
             "presence_penalty",
-            "top_k",
+            "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs",
             "tools",
             "tool_choice"
         ],
@@ -4093,7 +4194,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4151,7 +4252,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4209,7 +4310,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4265,7 +4366,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4298,10 +4399,10 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -4323,7 +4424,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4348,9 +4449,9 @@
             "output": 384000
         },
         "pricing": {
-            "input": "0.000000522",
-            "output": "0.000001044",
-            "input_cache_read": "0.0000000435",
+            "input": "0.000000790308",
+            "output": "0.000001580616",
+            "input_cache_read": "0.000000065859",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -4380,7 +4481,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4436,7 +4537,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4493,7 +4594,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4547,7 +4648,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4596,7 +4697,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4649,7 +4750,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4706,7 +4807,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4763,7 +4864,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4814,7 +4915,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4873,7 +4974,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4923,7 +5024,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -4947,32 +5048,32 @@
         },
         "limit": {
             "context": 262144,
-            "output": 16384
+            "output": 32768
         },
         "pricing": {
-            "input": "0.00000007",
-            "output": "0.00000034",
+            "input": "0.00000005",
+            "output": "0.00000025",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
+            "stop",
             "seed",
-            "min_p",
+            "max_tokens",
             "response_format",
-            "tool_choice",
-            "tools",
             "structured_outputs",
-            "logit_bias"
+            "logprobs",
+            "top_logprobs",
+            "tools",
+            "tool_choice"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -4984,7 +5085,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5041,7 +5142,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5101,7 +5202,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5154,7 +5255,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5214,7 +5315,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5273,7 +5374,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5329,7 +5430,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5381,7 +5482,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5438,7 +5539,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5493,7 +5594,7 @@
             "reasoning_return_mechanism": "content-string"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5526,10 +5627,10 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
+            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -5551,7 +5652,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5584,10 +5685,10 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -5609,7 +5710,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5668,7 +5769,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5717,7 +5818,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5766,7 +5867,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5817,7 +5918,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5878,7 +5979,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5938,7 +6039,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -5962,7 +6063,7 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 81920
         },
         "pricing": {
             "input": "0.0000001",
@@ -5973,14 +6074,18 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
+            "stop",
             "frequency_penalty",
-            "repetition_penalty",
             "presence_penalty",
-            "max_tokens",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
             "response_format",
+            "logit_bias",
             "structured_outputs",
             "tools",
             "tool_choice"
@@ -5995,7 +6100,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6028,10 +6133,10 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -6051,7 +6156,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6109,7 +6214,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6165,7 +6270,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6226,7 +6331,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6286,7 +6391,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6332,8 +6437,8 @@
             "seed",
             "min_p",
             "response_format",
-            "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -6345,7 +6450,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6405,7 +6510,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6460,7 +6565,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6518,7 +6623,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6578,7 +6683,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6636,7 +6741,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6686,7 +6791,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6730,7 +6835,6 @@
             "response_format",
             "tools",
             "tool_choice",
-            "stop",
             "structured_outputs"
         ],
         "reasoning_config": {
@@ -6747,7 +6851,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6788,6 +6892,7 @@
             "include_reasoning",
             "tools",
             "tool_choice",
+            "structured_outputs",
             "response_format",
             "verbosity"
         ],
@@ -6806,7 +6911,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6866,7 +6971,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6921,7 +7026,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6974,7 +7079,7 @@
             "reasoning_return_mechanism": "content-string"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -6996,7 +7101,7 @@
         },
         "limit": {
             "context": 204800,
-            "output": 128000
+            "output": null
         },
         "pricing": {
             "input": "0.0000006",
@@ -7007,16 +7112,14 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tool_choice",
-            "tools",
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "response_format",
+            "seed",
+            "tools",
+            "tool_choice",
             "structured_outputs",
-            "logprobs",
-            "top_logprobs"
+            "response_format"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -7028,7 +7131,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7086,7 +7189,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7121,16 +7224,17 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "structured_outputs",
             "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "stop",
-            "tool_choice",
+            "max_completion_tokens",
             "tools",
+            "tool_choice",
             "response_format",
             "verbosity",
-            "structured_outputs"
+            "top_k",
+            "stop"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -7147,7 +7251,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7205,7 +7309,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7256,7 +7360,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7310,7 +7414,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7363,7 +7467,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7408,7 +7512,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7455,7 +7559,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7514,7 +7618,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7570,7 +7674,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7625,7 +7729,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7680,7 +7784,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7736,7 +7840,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7795,7 +7899,7 @@
             "reasoning_return_mechanism": "reasoning-content"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7856,7 +7960,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7878,12 +7982,12 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 228000
         },
         "pricing": {
             "input": "0.00000005",
             "output": "0.0000002",
-            "input_cache_read": "0.00000003",
+            "input_cache_read": "0.000000025",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -7895,14 +7999,14 @@
             "stop",
             "frequency_penalty",
             "presence_penalty",
-            "seed",
-            "min_p",
             "repetition_penalty",
             "top_k",
-            "logit_bias",
-            "structured_outputs",
+            "seed",
+            "min_p",
+            "response_format",
+            "tool_choice",
             "tools",
-            "response_format"
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -7914,7 +8018,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -7964,7 +8068,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8020,7 +8124,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8053,12 +8157,12 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
-            "seed",
-            "max_tokens",
-            "response_format",
             "structured_outputs",
+            "response_format",
+            "seed",
             "tools",
             "tool_choice"
         ],
@@ -8078,7 +8182,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8128,7 +8232,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8186,7 +8290,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8242,7 +8346,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8296,7 +8400,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8350,7 +8454,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8404,7 +8508,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8458,7 +8562,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8513,7 +8617,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8563,7 +8667,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8617,7 +8721,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8673,7 +8777,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8726,7 +8830,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8779,7 +8883,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8832,7 +8936,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8885,7 +8989,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8938,7 +9042,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -8991,7 +9095,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9044,7 +9148,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9097,7 +9201,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9150,7 +9254,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9203,7 +9307,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9225,7 +9329,7 @@
         },
         "limit": {
             "context": 8194,
-            "output": null
+            "output": 8194
         },
         "pricing": {
             "input": "0.00000001",
@@ -9237,14 +9341,13 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
-            "response_format"
+            "stop",
+            "top_k",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -9256,7 +9359,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9309,7 +9412,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9362,7 +9465,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9418,7 +9521,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9475,7 +9578,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9530,7 +9633,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9585,7 +9688,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9642,7 +9745,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9691,7 +9794,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9742,7 +9845,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9789,7 +9892,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9843,7 +9946,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9894,7 +9997,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9948,7 +10051,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -9979,18 +10082,10 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "seed",
             "max_tokens",
-            "response_format",
-            "structured_outputs",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs"
+            "max_completion_tokens"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -10002,7 +10097,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10055,7 +10150,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10110,7 +10205,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10163,7 +10258,7 @@
             "reasoning_return_mechanism": "none"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10216,7 +10311,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10269,7 +10364,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10318,7 +10413,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10375,7 +10470,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10431,7 +10526,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10472,7 +10567,9 @@
             "include_reasoning",
             "tools",
             "tool_choice",
-            "top_k"
+            "top_k",
+            "structured_outputs",
+            "response_format"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -10484,7 +10581,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10543,7 +10640,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10600,7 +10697,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10659,7 +10756,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10716,7 +10813,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10770,7 +10867,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10825,7 +10922,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10858,17 +10955,15 @@
             "input_cache_write": "0.00000375"
         },
         "supported_parameters": [
+            "max_tokens",
+            "top_p",
+            "temperature",
+            "stop",
             "reasoning",
             "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "stop",
             "tools",
             "tool_choice",
-            "structured_outputs",
-            "response_format"
+            "top_k"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -10880,7 +10975,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10937,7 +11032,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -10993,7 +11088,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11038,7 +11133,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11097,7 +11192,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11155,7 +11250,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11211,7 +11306,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11267,7 +11362,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11318,7 +11413,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11340,26 +11435,30 @@
         },
         "limit": {
             "context": 163840,
-            "output": 163840
+            "output": 32768
         },
         "pricing": {
             "input": "0.00000027",
             "output": "0.000001",
-            "input_cache_read": null,
+            "input_cache_read": "0.000000135",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "structured_outputs",
-            "response_format",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
+            "stop",
             "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
             "tools",
             "tool_choice",
-            "max_tokens"
+            "response_format",
+            "structured_outputs"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -11371,7 +11470,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11426,7 +11525,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11448,7 +11547,7 @@
         },
         "limit": {
             "context": 262144,
-            "output": null
+            "output": 32768
         },
         "pricing": {
             "input": "0.00000015",
@@ -11462,17 +11561,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
             "seed",
-            "top_k",
-            "logit_bias",
-            "repetition_penalty",
+            "presence_penalty",
             "response_format",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "top_k",
+            "frequency_penalty",
+            "stop"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -11484,7 +11580,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11541,14 +11637,14 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
     },
     "qwen/qwen-plus-2025-07-28": {
         "hf_slug": "",
-        "name": "Qwen Plus 0728",
+        "name": "Qwen Plus 0728 (thinking)",
         "author": "qwen",
         "reasoning": true,
         "tool_call": true,
@@ -11572,6 +11668,8 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
             "structured_outputs",
             "response_format",
             "max_tokens",
@@ -11597,7 +11695,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11652,7 +11750,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11707,7 +11805,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11759,7 +11857,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11811,7 +11909,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11857,8 +11955,8 @@
             "response_format",
             "tools",
             "tool_choice",
-            "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -11870,7 +11968,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11925,7 +12023,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -11982,7 +12080,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12015,12 +12113,12 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
             "structured_outputs",
             "response_format",
             "seed",
+            "max_tokens",
             "tools",
             "tool_choice"
         ],
@@ -12039,7 +12137,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12063,21 +12161,21 @@
         },
         "limit": {
             "context": 400000,
-            "output": 128000
+            "output": null
         },
         "pricing": {
             "input": "0.00000025",
             "output": "0.000002",
-            "input_cache_read": "0.000000025",
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
-            "structured_outputs",
-            "response_format",
             "seed",
-            "max_tokens",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice"
         ],
@@ -12096,7 +12194,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12120,21 +12218,21 @@
         },
         "limit": {
             "context": 400000,
-            "output": 128000
+            "output": null
         },
         "pricing": {
             "input": "0.00000005",
             "output": "0.0000004",
-            "input_cache_read": "0.000000005",
+            "input_cache_read": "0.00000001",
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "reasoning",
             "include_reasoning",
-            "structured_outputs",
-            "response_format",
             "seed",
-            "max_tokens",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice"
         ],
@@ -12153,7 +12251,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12216,7 +12314,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12279,7 +12377,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12312,12 +12410,13 @@
             "input_cache_write": "0.00001875"
         },
         "supported_parameters": [
-            "max_tokens",
-            "top_p",
-            "temperature",
-            "stop",
             "reasoning",
             "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "stop",
             "tools",
             "tool_choice"
         ],
@@ -12331,7 +12430,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12386,7 +12485,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12441,7 +12540,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12494,7 +12593,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12545,7 +12644,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12600,7 +12699,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12656,7 +12755,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12713,7 +12812,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12769,7 +12868,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12826,7 +12925,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12883,7 +12982,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12936,7 +13035,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -12986,7 +13085,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13037,7 +13136,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13086,7 +13185,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13131,7 +13230,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13185,7 +13284,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13243,7 +13342,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13290,7 +13389,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13347,7 +13446,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13404,7 +13503,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13456,7 +13555,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13512,7 +13611,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13556,8 +13655,8 @@
             "seed",
             "min_p",
             "response_format",
-            "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -13569,7 +13668,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13621,7 +13720,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13673,7 +13772,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13727,7 +13826,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13782,7 +13881,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13839,7 +13938,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13893,7 +13992,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -13948,7 +14047,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14006,7 +14105,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14061,7 +14160,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14117,7 +14216,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14163,8 +14262,8 @@
             "response_format",
             "tools",
             "tool_choice",
-            "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "logit_bias"
         ],
         "reasoning_config": {
             "start_token": "<think>",
@@ -14176,7 +14275,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14231,7 +14330,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14285,7 +14384,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14337,7 +14436,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14389,7 +14488,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14413,7 +14512,7 @@
         },
         "limit": {
             "context": 1047576,
-            "output": null
+            "output": 32768
         },
         "pricing": {
             "input": "0.000002",
@@ -14422,8 +14521,8 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "max_completion_tokens",
             "seed",
+            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -14441,7 +14540,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14465,7 +14564,7 @@
         },
         "limit": {
             "context": 1047576,
-            "output": 32768
+            "output": null
         },
         "pricing": {
             "input": "0.0000004",
@@ -14474,8 +14573,8 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -14493,7 +14592,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14517,21 +14616,21 @@
         },
         "limit": {
             "context": 1047576,
-            "output": 32768
+            "output": null
         },
         "pricing": {
             "input": "0.0000001",
             "output": "0.0000004",
-            "input_cache_read": "0.000000025",
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
+            "max_completion_tokens",
             "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
-            "tools",
             "tool_choice",
+            "tools",
             "temperature",
             "top_p"
         ],
@@ -14545,7 +14644,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14597,7 +14696,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14653,7 +14752,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14710,7 +14809,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14760,7 +14859,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14816,7 +14915,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14872,7 +14971,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14930,7 +15029,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -14982,7 +15081,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15037,7 +15136,7 @@
             "reasoning_return_mechanism": "content-string"
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15095,7 +15194,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15151,7 +15250,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15203,7 +15302,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15253,7 +15352,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15304,7 +15403,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15358,7 +15457,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15411,7 +15510,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15456,7 +15555,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15512,7 +15611,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15568,7 +15667,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15619,7 +15718,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15674,7 +15773,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15724,7 +15823,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15777,7 +15876,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15834,7 +15933,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15880,7 +15979,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15935,7 +16034,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -15986,7 +16085,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16040,7 +16139,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16092,7 +16191,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16144,7 +16243,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16200,7 +16299,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16249,7 +16348,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16297,7 +16396,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16346,7 +16445,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16406,7 +16505,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16460,7 +16559,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16513,7 +16612,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16523,7 +16622,7 @@
         "name": "UnslopNemo 12B",
         "author": "thedrummer",
         "reasoning": false,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -16535,7 +16634,7 @@
         },
         "limit": {
             "context": 1024000,
-            "output": 1024000
+            "output": 32768
         },
         "pricing": {
             "input": "0.0000004",
@@ -16547,16 +16646,17 @@
             "max_tokens",
             "temperature",
             "top_p",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
+            "response_format",
+            "structured_outputs",
             "repetition_penalty",
             "seed",
-            "stop",
-            "top_k",
-            "logit_bias",
-            "structured_outputs",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tools",
+            "tool_choice"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -16568,7 +16668,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16626,7 +16726,58 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "mistralai/ministral-8b": {
+        "hf_slug": null,
+        "name": "Ministral 8B",
+        "author": "mistralai",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": null
+        },
+        "pricing": {
+            "input": "0.00000011",
+            "output": "0.00000011",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "response_format",
+            "structured_outputs"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16682,7 +16833,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16738,60 +16889,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
-            "source": "openrouter",
-            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
-        }
-    },
-    "meta-llama/llama-3.2-1b-instruct": {
-        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
-        "name": "Llama 3.2 1B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 60000,
-            "output": 60000
-        },
-        "pricing": {
-            "input": "0.000000027",
-            "output": "0.000000201",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias"
-        ],
-        "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": null,
-            "supports_reasoning_effort": null,
-            "supported_reasoning_efforts": null,
-            "default_reasoning_effort": null,
-            "reasoning_return_mechanism": null
-        },
-        "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16846,7 +16944,60 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "meta-llama/llama-3.2-1b-instruct": {
+        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
+        "name": "Llama 3.2 1B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 60000,
+            "output": 60000
+        },
+        "pricing": {
+            "input": "0.000000027",
+            "output": "0.000000201",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "seed",
+            "repetition_penalty",
+            "frequency_penalty",
+            "presence_penalty",
+            "min_p",
+            "stop",
+            "logit_bias"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16903,7 +17054,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -16957,7 +17108,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17011,7 +17162,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17066,7 +17217,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17121,7 +17272,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17176,7 +17327,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17198,7 +17349,7 @@
         },
         "limit": {
             "context": 8192,
-            "output": 16384
+            "output": 8192
         },
         "pricing": {
             "input": "0.00000004",
@@ -17210,15 +17361,17 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
+            "stop",
+            "top_k",
+            "logit_bias",
             "response_format",
-            "logit_bias"
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -17230,7 +17383,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17289,7 +17442,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17346,7 +17499,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17400,7 +17553,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17454,64 +17607,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
-            "source": "openrouter",
-            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
-        }
-    },
-    "openai/gpt-4o-mini": {
-        "hf_slug": null,
-        "name": "GPT-4o-mini",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000006",
-            "input_cache_read": "0.000000075",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
-        ],
-        "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": null,
-            "supports_reasoning_effort": null,
-            "supported_reasoning_efforts": null,
-            "default_reasoning_effort": null,
-            "reasoning_return_mechanism": null
-        },
-        "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17571,7 +17667,64 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "openai/gpt-4o-mini": {
+        "hf_slug": null,
+        "name": "GPT-4o-mini",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.00000015",
+            "output": "0.0000006",
+            "input_cache_read": "0.000000075",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17623,7 +17776,67 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "openai/gpt-4o": {
+        "hf_slug": null,
+        "name": "GPT-4o",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.0000025",
+            "output": "0.00001",
+            "input_cache_read": "0.00000125",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "prediction",
+            "tools",
+            "tool_choice"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17656,19 +17869,20 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "max_completion_tokens",
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
             "temperature",
             "top_p",
             "stop",
             "frequency_penalty",
             "presence_penalty",
             "web_search_options",
-            "seed",
             "logit_bias",
             "logprobs",
             "top_logprobs",
-            "response_format",
-            "structured_outputs",
+            "prediction",
             "tools",
             "tool_choice"
         ],
@@ -17682,66 +17896,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
-            "source": "openrouter",
-            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
-        }
-    },
-    "openai/gpt-4o": {
-        "hf_slug": null,
-        "name": "GPT-4o",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.0000025",
-            "output": "0.00001",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
-        ],
-        "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": null,
-            "supports_reasoning_effort": null,
-            "supported_reasoning_efforts": null,
-            "default_reasoning_effort": null,
-            "reasoning_return_mechanism": null
-        },
-        "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17795,7 +17950,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17847,7 +18002,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17904,7 +18059,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -17954,7 +18109,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18008,7 +18163,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18064,7 +18219,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18120,7 +18275,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18174,7 +18329,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18205,18 +18360,18 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
+            "max_completion_tokens",
             "temperature",
             "top_p",
             "stop",
             "frequency_penalty",
             "presence_penalty",
+            "seed",
             "logit_bias",
             "logprobs",
             "top_logprobs",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice"
         ],
@@ -18230,7 +18385,64 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "mancer/weaver": {
+        "hf_slug": null,
+        "name": "Weaver (alpha)",
+        "author": "mancer",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8000,
+            "output": 6000
+        },
+        "pricing": {
+            "input": "0.0000005",
+            "output": "0.00000075",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "response_format",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "logit_bias",
+            "top_k",
+            "min_p",
+            "seed",
+            "top_a",
+            "logprobs",
+            "top_logprobs"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18252,7 +18464,7 @@
         },
         "limit": {
             "context": 6144,
-            "output": 6144
+            "output": 4096
         },
         "pricing": {
             "input": "0.00000045",
@@ -18261,6 +18473,7 @@
             "input_cache_write": null
         },
         "supported_parameters": [
+            "structured_outputs",
             "response_format",
             "max_tokens",
             "temperature",
@@ -18268,15 +18481,10 @@
             "stop",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
-            "logit_bias",
-            "top_k",
-            "min_p",
-            "seed",
-            "top_a",
             "logprobs",
             "top_logprobs",
-            "structured_outputs"
+            "repetition_penalty",
+            "seed"
         ],
         "reasoning_config": {
             "start_token": null,
@@ -18288,7 +18496,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18342,63 +18550,7 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
-            "source": "openrouter",
-            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
-        }
-    },
-    "openai/gpt-3.5-turbo": {
-        "hf_slug": null,
-        "name": "GPT-3.5 Turbo",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 16385,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.0000005",
-            "output": "0.0000015",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "tools",
-            "tool_choice"
-        ],
-        "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": null,
-            "supports_reasoning_effort": null,
-            "supported_reasoning_efforts": null,
-            "default_reasoning_effort": null,
-            "reasoning_return_mechanism": null
-        },
-        "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
@@ -18454,7 +18606,63 @@
             "reasoning_return_mechanism": null
         },
         "scrape_metadata": {
-            "last_update_datetime": "2026-08-20 01:25:59",
+            "last_update_datetime": "2026-08-21 01:36:28",
+            "source": "openrouter",
+            "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
+        }
+    },
+    "openai/gpt-3.5-turbo": {
+        "hf_slug": null,
+        "name": "GPT-3.5 Turbo",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 16385,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.0000005",
+            "output": "0.0000015",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "tools",
+            "tool_choice"
+        ],
+        "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": null,
+            "supports_reasoning_effort": null,
+            "supported_reasoning_efforts": null,
+            "default_reasoning_effort": null,
+            "reasoning_return_mechanism": null
+        },
+        "scrape_metadata": {
+            "last_update_datetime": "2026-08-21 01:36:28",
             "source": "openrouter",
             "source_url": "https://openrouter.ai/api/frontend/v1/catalog/models"
         }
