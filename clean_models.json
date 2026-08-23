@@ -65,9 +65,9 @@
             "output": 384000
         },
         "pricing": {
-            "input": "0.00000044",
-            "output": "0.00000132",
-            "input_cache_read": "0.000000014",
+            "input": "0.00000022",
+            "output": "0.00000066",
+            "input_cache_read": "0.000000007",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -123,6 +123,41 @@
         "oid": "tencent/hy-mt2-30b-a3b",
         "hf_slug": "tencent/Hy-MT2-30B-A3B",
         "name": "Hy-MT2-30B-A3B",
+        "author": "tencent",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8192,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.000000074",
+            "output": "0.000000295",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "temperature",
+            "stop",
+            "max_completion_tokens",
+            "max_tokens",
+            "response_format",
+            "structured_outputs"
+        ]
+    },
+    "hy-mt2-7b": {
+        "oid": "tencent/hy-mt2-7b",
+        "hf_slug": "tencent/Hy-MT2-7B",
+        "name": "Hy-MT2-7B",
         "author": "tencent",
         "reasoning": false,
         "tool_call": false,
@@ -458,12 +493,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 384000
         },
         "pricing": {
-            "input": "0.0000011616",
-            "output": "0.0000034848",
-            "input_cache_read": "0.00000011616",
+            "input": "0.00000066",
+            "output": "0.00000198",
+            "input_cache_read": "0.000000022",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -472,15 +507,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "top_k",
-            "frequency_penalty",
             "stop",
-            "structured_outputs",
+            "frequency_penalty",
+            "presence_penalty",
+            "logprobs",
+            "top_logprobs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "grok-4.6": {
@@ -804,31 +838,31 @@
         },
         "limit": {
             "context": 1310720,
-            "output": 1048576
+            "output": 262144
         },
         "pricing": {
-            "input": "0.000000065",
-            "output": "0.00000018",
-            "input_cache_read": "0.00000002",
+            "input": "0.0000000639",
+            "output": "0.0000001278",
+            "input_cache_read": "0.00000001278",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
             "temperature",
             "top_p",
             "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
+            "repetition_penalty",
             "stop",
             "seed",
-            "max_tokens"
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "inkling-small": {
@@ -3096,11 +3130,11 @@
         },
         "limit": {
             "context": 262144,
-            "output": 8192
+            "output": 16384
         },
         "pricing": {
-            "input": "0.00000008",
-            "output": "0.00000075",
+            "input": "0.00000007",
+            "output": "0.0000007",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -3313,9 +3347,9 @@
             "output": 384000
         },
         "pricing": {
-            "input": "0.000000532092",
-            "output": "0.000001064184",
-            "input_cache_read": "0.000000044341",
+            "input": "0.000000413772",
+            "output": "0.000000827544",
+            "input_cache_read": "0.000000034481",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3351,26 +3385,27 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 384000
         },
         "pricing": {
-            "input": "0.0000000679",
-            "output": "0.000000168",
-            "input_cache_read": "0.0000000168",
+            "input": "0.00000005446",
+            "output": "0.00000010892",
+            "input_cache_read": "0.000000010892",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "response_format",
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs",
+            "structured_outputs",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
-            "tool_choice",
-            "tools",
-            "structured_outputs",
-            "response_format",
-            "logprobs",
-            "top_logprobs"
+            "stop"
         ]
     },
     "ling-2.6-1t": {
@@ -3559,9 +3594,9 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.0000005493",
-            "output": "0.0000023128",
-            "input_cache_read": "0.0000000925",
+            "input": "0.0000005415",
+            "output": "0.00000228",
+            "input_cache_read": "0.0000000912",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3569,14 +3604,10 @@
             "include_reasoning",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
+            "max_tokens",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
             "stop",
-            "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -9508,30 +9539,25 @@
         },
         "limit": {
             "context": 262144,
-            "output": 16384
+            "output": null
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000055",
-            "input_cache_read": null,
+            "input": "0.0000000875",
+            "output": "0.00000035",
+            "input_cache_read": "0.0000000175",
             "input_cache_write": null
         },
         "supported_parameters": [
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
             "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "logit_bias",
-            "structured_outputs"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2": {
