@@ -393,9 +393,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.00000025",
-            "output": "0.000003",
-            "input_cache_read": "0.000000025",
+            "input": "0.00000035",
+            "output": "0.00000255",
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2282,27 +2282,32 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 128000
+            "output": 163840
         },
         "pricing": {
-            "input": "0.0000003276",
-            "output": "0.0000010296",
-            "input_cache_read": "0.00000006084",
+            "input": "0.0000004875",
+            "output": "0.00000156",
+            "input_cache_read": "0.000000091",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tool_choice",
-            "tools",
-            "response_format",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
             "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "logit_bias"
         ]
     },
     "kimi-k2.7-code": {
@@ -3445,27 +3450,25 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": null
         },
         "pricing": {
-            "input": "0.000000498336",
-            "output": "0.000000996672",
-            "input_cache_read": "0.000000041528",
+            "input": "0.00000087",
+            "output": "0.00000174",
+            "input_cache_read": "0.000000174",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
-            "structured_outputs",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "max_tokens",
+            "response_format",
+            "tool_choice",
+            "tools",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "deepseek-v4-flash": {
@@ -3606,24 +3609,29 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.00000052915",
-            "output": "0.000002228",
-            "input_cache_read": "0.00000008912",
+            "input": "0.00000053",
+            "output": "0.00000339",
+            "input_cache_read": "0.00000017",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
             "temperature",
-            "top_p",
             "max_tokens",
-            "frequency_penalty",
-            "presence_penalty",
+            "top_p",
             "stop",
+            "frequency_penalty",
+            "logit_bias",
+            "parallel_tool_calls",
+            "presence_penalty",
+            "seed",
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.7": {
@@ -3672,7 +3680,7 @@
         "name": "GLM 5.1",
         "author": "z-ai",
         "reasoning": true,
-        "tool_call": true,
+        "tool_call": false,
         "release_date": null,
         "modalities": {
             "input": [
@@ -3684,28 +3692,23 @@
         },
         "limit": {
             "context": 204800,
-            "output": 131072
+            "output": null
         },
         "pricing": {
-            "input": "0.0000009086",
-            "output": "0.0000028556",
-            "input_cache_read": "0.00000016874",
+            "input": "0.00000091",
+            "output": "0.00000286",
+            "input_cache_read": "0.000000169",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
+            "seed",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gemma-4-26b-a4b-it": {
@@ -6030,12 +6033,12 @@
         },
         "limit": {
             "context": 262144,
-            "output": null
+            "output": 262144
         },
         "pricing": {
-            "input": "0.00000044",
-            "output": "0.0000022",
-            "input_cache_read": "0.000000044",
+            "input": "0.0000004",
+            "output": "0.000002",
+            "input_cache_read": "0.00000004",
             "input_cache_write": null
         },
         "supported_parameters": [
