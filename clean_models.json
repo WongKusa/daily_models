@@ -22,7 +22,7 @@
         "pricing": {
             "input": "0.00000003",
             "output": "0.00000015",
-            "input_cache_read": null,
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -63,7 +63,7 @@
         "pricing": {
             "input": "0.00000005",
             "output": "0.00000023",
-            "input_cache_read": null,
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -222,7 +222,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 1048576
         },
         "pricing": {
             "input": "0.00000015",
@@ -233,17 +233,19 @@
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
+            "top_k",
+            "min_p",
             "stop",
+            "max_tokens",
+            "logit_bias",
             "frequency_penalty",
             "presence_penalty",
-            "logprobs",
-            "top_logprobs",
+            "repetition_penalty",
+            "response_format",
             "tools",
-            "tool_choice",
-            "response_format"
+            "tool_choice"
         ]
     },
     "mercury-2.5": {
@@ -1022,25 +1024,27 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000008727",
-            "output": "0.00000336",
-            "input_cache_read": "0.0000001639",
+            "input": "0.00000092",
+            "output": "0.0000031372",
+            "input_cache_read": "0.000000184",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
             "max_tokens",
-            "top_p",
+            "temperature",
             "stop",
+            "top_p",
+            "top_k",
+            "min_p",
             "frequency_penalty",
-            "logit_bias",
-            "parallel_tool_calls",
             "presence_penalty",
-            "reasoning_effort",
+            "repetition_penalty",
             "seed",
+            "logit_bias",
             "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
             "logprobs",
@@ -1298,7 +1302,7 @@
     "deepseek-v4-pro-0813": {
         "oid": "deepseek/deepseek-v4-pro-0813",
         "hf_slug": "deepseek-ai/DeepSeek-V4-Pro-0813",
-        "name": "DeepSeek V4 Pro 0813 (batch)",
+        "name": "DeepSeek V4 Pro 0813",
         "author": "deepseek",
         "reasoning": true,
         "tool_call": true,
@@ -1313,12 +1317,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 943718
         },
         "pricing": {
-            "input": "0.00000066",
-            "output": "0.00000198",
-            "input_cache_read": "0.000000022",
+            "input": "0.00000088",
+            "output": "0.00000264",
+            "input_cache_read": "0.000000088",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1327,18 +1331,14 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "top_k",
-            "repetition_penalty",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
+            "stop",
+            "seed",
             "response_format",
-            "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "grok-4.6": {
@@ -3853,12 +3853,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": null
         },
         "pricing": {
-            "input": "0.00000064558",
-            "output": "0.00000129116",
-            "input_cache_read": "0.00000005348",
+            "input": "0.00000087",
+            "output": "0.00000174",
+            "input_cache_read": "0.000000174",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3867,11 +3867,11 @@
             "temperature",
             "top_p",
             "max_tokens",
-            "stop",
             "response_format",
-            "structured_outputs",
+            "tool_choice",
             "tools",
-            "tool_choice"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "deepseek-v4-flash": {
@@ -3892,7 +3892,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 1048576
+            "output": 393216
         },
         "pricing": {
             "input": "0.00000005",
@@ -3907,12 +3907,17 @@
             "max_tokens",
             "stop",
             "seed",
+            "tools",
+            "tool_choice",
+            "response_format",
             "top_p",
             "frequency_penalty",
             "presence_penalty",
-            "tools",
-            "tool_choice",
-            "response_format"
+            "top_k",
+            "min_p",
+            "logit_bias",
+            "repetition_penalty",
+            "structured_outputs"
         ]
     },
     "mimo-v2.5-pro": {
@@ -4010,27 +4015,29 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 65535
         },
         "pricing": {
-            "input": "0.0000005795",
-            "output": "0.00000244",
-            "input_cache_read": "0.0000000976",
+            "input": "0.00000058",
+            "output": "0.0000034",
+            "input_cache_read": "0.000000058",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "stop",
-            "response_format",
-            "structured_outputs",
+            "seed",
+            "top_k",
+            "repetition_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "claude-opus-4.7": {
@@ -4091,28 +4098,27 @@
         },
         "limit": {
             "context": 204800,
-            "output": 131072
+            "output": 128000
         },
         "pricing": {
-            "input": "0.0000009646",
-            "output": "0.0000030316",
-            "input_cache_read": "0.00000017914",
+            "input": "0.000000966",
+            "output": "0.000003036",
+            "input_cache_read": "0.0000001794",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
-            "top_p",
-            "max_tokens",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
+            "tools",
+            "tool_choice",
             "response_format",
             "structured_outputs",
-            "tools",
-            "tool_choice"
+            "logprobs",
+            "top_logprobs",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop"
         ]
     },
     "gemma-4-26b-a4b-it": {
@@ -8704,7 +8710,7 @@
         "hf_slug": "",
         "name": "Qwen3 Coder Plus",
         "author": "qwen",
-        "reasoning": true,
+        "reasoning": false,
         "tool_call": true,
         "release_date": null,
         "modalities": {
@@ -8975,7 +8981,7 @@
         },
         "limit": {
             "context": 262144,
-            "output": 100352
+            "output": 98304
         },
         "pricing": {
             "input": "0.0000006",
@@ -9891,7 +9897,7 @@
         },
         "limit": {
             "context": 131072,
-            "output": 100352
+            "output": 98304
         },
         "pricing": {
             "input": "0.00000057",
@@ -11979,8 +11985,7 @@
             "repetition_penalty",
             "tools",
             "tool_choice",
-            "response_format",
-            "structured_outputs"
+            "response_format"
         ]
     },
     "minimax-01": {
@@ -12750,47 +12755,6 @@
             "structured_outputs"
         ]
     },
-    "command-r-08-2024": {
-        "oid": "cohere/command-r-08-2024",
-        "hf_slug": null,
-        "name": "Command R (08-2024)",
-        "author": "cohere",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 4000
-        },
-        "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000006",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "top_k",
-            "seed",
-            "structured_outputs",
-            "response_format",
-            "tools",
-            "tool_choice"
-        ]
-    },
     "command-r-plus-08-2024": {
         "oid": "cohere/command-r-plus-08-2024",
         "hf_slug": null,
@@ -12814,6 +12778,47 @@
         "pricing": {
             "input": "0.0000025",
             "output": "0.00001",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "top_k",
+            "seed",
+            "structured_outputs",
+            "response_format",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "command-r-08-2024": {
+        "oid": "cohere/command-r-08-2024",
+        "hf_slug": null,
+        "name": "Command R (08-2024)",
+        "author": "cohere",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 4000
+        },
+        "pricing": {
+            "input": "0.00000015",
+            "output": "0.0000006",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -13173,6 +13178,50 @@
             "top_logprobs"
         ]
     },
+    "gpt-4o-mini": {
+        "oid": "openai/gpt-4o-mini",
+        "hf_slug": null,
+        "name": "GPT-4o-mini",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.00000015",
+            "output": "0.0000006",
+            "input_cache_read": "0.000000075",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
+        ]
+    },
     "gpt-4o-mini-2024-07-18": {
         "oid": "openai/gpt-4o-mini-2024-07-18",
         "hf_slug": null,
@@ -13220,50 +13269,6 @@
             "tool_choice"
         ]
     },
-    "gpt-4o-mini": {
-        "oid": "openai/gpt-4o-mini",
-        "hf_slug": null,
-        "name": "GPT-4o-mini",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000006",
-            "input_cache_read": "0.000000075",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
-        ]
-    },
     "gemma-2-27b-it": {
         "oid": "google/gemma-2-27b-it",
         "hf_slug": "google/gemma-2-27b-it",
@@ -13303,52 +13308,6 @@
             "seed"
         ]
     },
-    "gpt-4o": {
-        "oid": "openai/gpt-4o",
-        "hf_slug": null,
-        "name": "GPT-4o",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.0000025",
-            "output": "0.00001",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
-        ]
-    },
     "gpt-4o-2024-05-13": {
         "oid": "openai/gpt-4o-2024-05-13",
         "hf_slug": null,
@@ -13374,6 +13333,52 @@
         "pricing": {
             "input": "0.000005",
             "output": "0.000015",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "gpt-4o": {
+        "oid": "openai/gpt-4o",
+        "hf_slug": null,
+        "name": "GPT-4o",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.0000025",
+            "output": "0.00001",
             "input_cache_read": null,
             "input_cache_write": null
         },
