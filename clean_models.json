@@ -196,11 +196,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "deepseek-v4.1-flash": {
@@ -227,7 +227,7 @@
         "pricing": {
             "input": "0.00000015",
             "output": "0.0000006",
-            "input_cache_read": "0.000000003",
+            "input_cache_read": "0.000000015",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -243,7 +243,6 @@
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "tools",
             "tool_choice"
         ]
@@ -620,9 +619,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
-            "tools"
+            "tools",
+            "response_format"
         ]
     },
     "hy4-preview": {
@@ -704,7 +703,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
@@ -802,11 +800,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "muse-spark-1.2-contributor": {
@@ -893,8 +891,8 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
+            "response_format",
             "structured_outputs",
             "tools",
             "tool_choice"
@@ -1021,28 +1019,25 @@
         },
         "limit": {
             "context": 1310720,
-            "output": 1048576
+            "output": 262144
         },
         "pricing": {
-            "input": "0.00000092",
-            "output": "0.0000031372",
-            "input_cache_read": "0.000000184",
+            "input": "0.0000008775",
+            "output": "0.00000297",
+            "input_cache_read": "0.0000001755",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
-            "stop",
             "top_p",
             "top_k",
-            "min_p",
+            "max_tokens",
+            "stop",
+            "seed",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
@@ -1071,32 +1066,32 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 32768
+            "output": null
         },
         "pricing": {
             "input": "0.00000015",
-            "output": "0.000002",
-            "input_cache_read": null,
+            "output": "0.000001875",
+            "input_cache_read": "0.0000000375",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "stop",
+            "top_k",
             "seed",
-            "max_tokens",
+            "min_p",
+            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "tool_choice"
         ]
     },
     "gemini-3.7-flash": {
@@ -1317,12 +1312,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 943718
+            "output": 384000
         },
         "pricing": {
-            "input": "0.00000088",
-            "output": "0.00000264",
-            "input_cache_read": "0.000000088",
+            "input": "0.00000066",
+            "output": "0.00000198",
+            "input_cache_read": "0.000000022",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1331,14 +1326,14 @@
             "max_tokens",
             "temperature",
             "top_p",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "stop",
-            "seed",
-            "response_format",
+            "logprobs",
+            "top_logprobs",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "response_format"
         ]
     },
     "grok-4.6": {
@@ -2646,9 +2641,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.00000007",
-            "output": "0.00000029",
-            "input_cache_read": "0.0000000175",
+            "input": "0.000000105",
+            "output": "0.000000435",
+            "input_cache_read": "0.00000002625",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2664,11 +2659,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "structured_outputs",
             "tools",
             "tool_choice",
-            "logit_bias"
+            "logit_bias",
+            "response_format"
         ]
     },
     "laguna-xs-2.1": {
@@ -2868,7 +2863,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "logit_bias"
@@ -2954,7 +2948,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias"
         ]
     },
@@ -2997,10 +2990,10 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "structured_outputs",
+            "response_format",
             "logit_bias"
         ]
     },
@@ -3138,7 +3131,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "tools",
             "tool_choice"
@@ -3302,13 +3294,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "gemini-3.5-flash": {
         "oid": "google/gemini-3.5-flash",
@@ -3853,25 +3839,27 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 384000
         },
         "pricing": {
-            "input": "0.00000087",
-            "output": "0.00000174",
-            "input_cache_read": "0.000000174",
+            "input": "0.00000095526",
+            "output": "0.00000191052",
+            "input_cache_read": "0.000000079605",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "logprobs",
+            "top_logprobs",
+            "structured_outputs",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
-            "response_format",
-            "tool_choice",
-            "tools",
-            "logprobs",
-            "top_logprobs"
+            "stop"
         ]
     },
     "deepseek-v4-flash": {
@@ -3896,8 +3884,8 @@
         },
         "pricing": {
             "input": "0.00000005",
-            "output": "0.00000012",
-            "input_cache_read": "0.0000000012",
+            "output": "0.00000014",
+            "input_cache_read": "0.000000014",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -4015,29 +4003,26 @@
         },
         "limit": {
             "context": 262144,
-            "output": 65535
+            "output": 262144
         },
         "pricing": {
-            "input": "0.00000058",
-            "output": "0.0000034",
-            "input_cache_read": "0.000000058",
+            "input": "0.00000057",
+            "output": "0.0000024",
+            "input_cache_read": "0.000000114",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "top_k",
-            "repetition_penalty",
-            "tools",
+            "max_tokens",
+            "structured_outputs",
+            "response_format",
             "tool_choice",
-            "structured_outputs"
+            "tools",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.7": {
@@ -4697,15 +4682,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options"
-        ]
+        "supported_parameters": []
     },
     "pplx-embed-v1-0.6b": {
         "oid": "perplexity/pplx-embed-v1-0.6b",
@@ -4733,15 +4710,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options"
-        ]
+        "supported_parameters": []
     },
     "glm-5-turbo": {
         "oid": "z-ai/glm-5-turbo",
@@ -6197,10 +6166,10 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "structured_outputs",
+            "response_format",
             "logit_bias"
         ]
     },
@@ -6879,19 +6848,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "gte-large": {
         "oid": "thenlper/gte-large",
@@ -6919,19 +6876,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "e5-large-v2": {
         "oid": "intfloat/e5-large-v2",
@@ -6959,19 +6904,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "e5-base-v2": {
         "oid": "intfloat/e5-base-v2",
@@ -6999,19 +6932,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "multilingual-e5-large": {
         "oid": "intfloat/multilingual-e5-large",
@@ -7039,19 +6960,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "paraphrase-minilm-l6-v2": {
         "oid": "sentence-transformers/paraphrase-minilm-l6-v2",
@@ -7079,19 +6988,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "all-minilm-l12-v2": {
         "oid": "sentence-transformers/all-minilm-l12-v2",
@@ -7119,19 +7016,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "bge-base-en-v1.5": {
         "oid": "baai/bge-base-en-v1.5",
@@ -7159,19 +7044,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "multi-qa-mpnet-base-dot-v1": {
         "oid": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
@@ -7199,19 +7072,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "bge-large-en-v1.5": {
         "oid": "baai/bge-large-en-v1.5",
@@ -7239,19 +7100,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "bge-m3": {
         "oid": "baai/bge-m3",
@@ -7279,18 +7128,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "top_k",
-            "logit_bias"
-        ]
+        "supported_parameters": []
     },
     "all-mpnet-base-v2": {
         "oid": "sentence-transformers/all-mpnet-base-v2",
@@ -7318,19 +7156,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "all-minilm-l6-v2": {
         "oid": "sentence-transformers/all-minilm-l6-v2",
@@ -7358,19 +7184,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "gpt-5.1": {
         "oid": "openai/gpt-5.1",
@@ -7595,17 +7409,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "response_format",
-            "structured_outputs"
-        ]
+        "supported_parameters": []
     },
     "gemini-embedding-001": {
         "oid": "google/gemini-embedding-001",
@@ -7633,13 +7437,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "text-embedding-ada-002": {
         "oid": "openai/text-embedding-ada-002",
@@ -7667,20 +7465,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs"
-        ]
+        "supported_parameters": []
     },
     "codestral-embed-2505": {
         "oid": "mistralai/codestral-embed-2505",
@@ -7708,17 +7493,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "response_format",
-            "structured_outputs"
-        ]
+        "supported_parameters": []
     },
     "text-embedding-3-large": {
         "oid": "openai/text-embedding-3-large",
@@ -7746,12 +7521,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "max_completion_tokens"
-        ]
+        "supported_parameters": []
     },
     "text-embedding-3-small": {
         "oid": "openai/text-embedding-3-small",
@@ -7779,12 +7549,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "max_completion_tokens"
-        ]
+        "supported_parameters": []
     },
     "sonar-pro-search": {
         "oid": "perplexity/sonar-pro-search",
@@ -7934,19 +7699,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "top_k",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs"
-        ]
+        "supported_parameters": []
     },
     "qwen3-embedding-4b": {
         "oid": "qwen/qwen3-embedding-4b",
@@ -7974,19 +7727,7 @@
             "input_cache_read": null,
             "input_cache_write": null
         },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "response_format"
-        ]
+        "supported_parameters": []
     },
     "minimax-m2": {
         "oid": "minimax/minimax-m2",
@@ -8655,11 +8396,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "qwen3-max": {
@@ -8913,11 +8654,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "qwen-plus-2025-07-28": {
@@ -9125,11 +8866,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "structured_outputs",
-            "logit_bias"
+            "logit_bias",
+            "response_format"
         ]
     },
     "mistral-medium-3.1": {
@@ -9543,8 +9284,7 @@
             "repetition_penalty",
             "tools",
             "tool_choice",
-            "response_format",
-            "structured_outputs"
+            "response_format"
         ]
     },
     "qwen3-30b-a3b-instruct-2507": {
@@ -10141,11 +9881,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "minimax-m1": {
@@ -10348,9 +10088,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "structured_outputs",
-            "logit_bias"
+            "logit_bias",
+            "response_format"
         ]
     },
     "claude-opus-4": {
@@ -10474,50 +10214,6 @@
             "tool_choice"
         ]
     },
-    "gemini-2.5-pro-preview-05-06": {
-        "oid": "google/gemini-2.5-pro-preview-05-06",
-        "hf_slug": "",
-        "name": "Gemini 2.5 Pro Preview 05-06",
-        "author": "google",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file",
-                "audio",
-                "video"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1048576,
-            "output": 65535
-        },
-        "pricing": {
-            "input": "0.00000125",
-            "output": "0.00001",
-            "input_cache_read": "0.000000125",
-            "input_cache_write": "0.000000375"
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "structured_outputs",
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "tools",
-            "tool_choice",
-            "stop"
-        ]
-    },
     "llama-guard-4-12b": {
         "oid": "meta-llama/llama-guard-4-12b",
         "hf_slug": "meta-llama/Llama-Guard-4-12B",
@@ -10556,7 +10252,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias"
         ]
     },
@@ -10730,11 +10425,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "structured_outputs",
-            "logit_bias"
+            "logit_bias",
+            "response_format"
         ]
     },
     "qwen3-235b-a22b": {
@@ -11032,11 +10727,11 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 16384
         },
         "pricing": {
-            "input": "0.0000002",
-            "output": "0.000000696",
+            "input": "0.0000001875",
+            "output": "0.0000006525",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -11090,7 +10785,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs"
         ]
@@ -11132,11 +10826,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "tools",
             "tool_choice",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "o1-pro": {
@@ -11257,9 +10951,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "gemma-3-12b-it": {
@@ -11300,11 +10994,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "command-a": {
@@ -11426,11 +11120,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "skyfall-36b-v2": {
@@ -11863,9 +11557,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "sonar": {
@@ -12058,9 +11752,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "deepseek-chat": {
@@ -12257,10 +11951,10 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "logit_bias",
+            "response_format",
             "structured_outputs"
         ]
     },
@@ -12629,46 +12323,6 @@
             "tool_choice"
         ]
     },
-    "llama-3.2-1b-it": {
-        "oid": "meta-llama/llama-3.2-1b-instruct",
-        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
-        "name": "Llama 3.2 1B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 60000,
-            "output": 60000
-        },
-        "pricing": {
-            "input": "0.000000027",
-            "output": "0.000000201",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias"
-        ]
-    },
     "llama-3.2-3b-it": {
         "oid": "meta-llama/llama-3.2-3b-instruct",
         "hf_slug": "meta-llama/Llama-3.2-3B-Instruct",
@@ -12711,6 +12365,46 @@
             "top_logprobs"
         ]
     },
+    "llama-3.2-1b-it": {
+        "oid": "meta-llama/llama-3.2-1b-instruct",
+        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
+        "name": "Llama 3.2 1B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 60000,
+            "output": 60000
+        },
+        "pricing": {
+            "input": "0.000000027",
+            "output": "0.000000201",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "seed",
+            "repetition_penalty",
+            "frequency_penalty",
+            "presence_penalty",
+            "min_p",
+            "stop",
+            "logit_bias"
+        ]
+    },
     "qwen-2.5-72b-it": {
         "oid": "qwen/qwen-2.5-72b-instruct",
         "hf_slug": "Qwen/Qwen2.5-72B-Instruct",
@@ -12748,52 +12442,11 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "tools",
             "tool_choice",
             "logit_bias",
-            "structured_outputs"
-        ]
-    },
-    "command-r-plus-08-2024": {
-        "oid": "cohere/command-r-plus-08-2024",
-        "hf_slug": null,
-        "name": "Command R+ (08-2024)",
-        "author": "cohere",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 4000
-        },
-        "pricing": {
-            "input": "0.0000025",
-            "output": "0.00001",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "top_k",
-            "seed",
             "structured_outputs",
-            "response_format",
-            "tools",
-            "tool_choice"
+            "response_format"
         ]
     },
     "command-r-08-2024": {
@@ -12819,6 +12472,47 @@
         "pricing": {
             "input": "0.00000015",
             "output": "0.0000006",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "top_k",
+            "seed",
+            "structured_outputs",
+            "response_format",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "command-r-plus-08-2024": {
+        "oid": "cohere/command-r-plus-08-2024",
+        "hf_slug": null,
+        "name": "Command R+ (08-2024)",
+        "author": "cohere",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 4000
+        },
+        "pricing": {
+            "input": "0.0000025",
+            "output": "0.00001",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -12874,7 +12568,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs"
         ]
@@ -12916,7 +12609,6 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
             "structured_outputs"
         ]
@@ -12958,9 +12650,9 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
             "logit_bias",
-            "structured_outputs"
+            "structured_outputs",
+            "response_format"
         ]
     },
     "l3-lunaris-8b": {
@@ -13133,8 +12825,8 @@
             "top_k",
             "seed",
             "min_p",
-            "response_format",
-            "logit_bias"
+            "logit_bias",
+            "response_format"
         ]
     },
     "mistral-nemo": {
@@ -13859,48 +13551,6 @@
             "seed"
         ]
     },
-    "gpt-4": {
-        "oid": "openai/gpt-4",
-        "hf_slug": null,
-        "name": "GPT-4",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 8191,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.00003",
-            "output": "0.00006",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_completion_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "tools",
-            "tool_choice"
-        ]
-    },
     "gpt-3.5-turbo": {
         "oid": "openai/gpt-3.5-turbo",
         "hf_slug": null,
@@ -13940,6 +13590,48 @@
             "logit_bias",
             "logprobs",
             "top_logprobs",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "gpt-4": {
+        "oid": "openai/gpt-4",
+        "hf_slug": null,
+        "name": "GPT-4",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 8191,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.00003",
+            "output": "0.00006",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
             "tools",
             "tool_choice"
         ]
