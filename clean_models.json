@@ -347,27 +347,24 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.000000135",
-            "output": "0.00000054",
-            "input_cache_read": "0.00000000405",
+            "input": "0.00000013",
+            "output": "0.00000052",
+            "input_cache_read": "0.0000000026",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
-            "stop",
             "top_p",
             "top_k",
             "min_p",
+            "stop",
+            "max_tokens",
+            "logit_bias",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "seed",
-            "logit_bias",
-            "response_format",
-            "structured_outputs",
             "tools",
             "tool_choice"
         ]
@@ -1143,9 +1140,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.0000008918",
-            "output": "0.0000028028",
-            "input_cache_read": "0.00000016562",
+            "input": "0.0000008442",
+            "output": "0.0000026532",
+            "input_cache_read": "0.00000015678",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3952,25 +3949,27 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 384000
         },
         "pricing": {
-            "input": "0.00000064389",
-            "output": "0.00000128778",
-            "input_cache_read": "0.00000005334",
+            "input": "0.000000422298",
+            "output": "0.000000844596",
+            "input_cache_read": "0.0000000351915",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "logprobs",
+            "top_logprobs",
+            "structured_outputs",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
-            "stop",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
+            "stop"
         ]
     },
     "deepseek-v4-flash": {
@@ -3994,9 +3993,9 @@
             "output": 384000
         },
         "pricing": {
-            "input": "0.00000004844",
-            "output": "0.00000009688",
-            "input_cache_read": "0.000000009688",
+            "input": "0.00000003668",
+            "output": "0.00000007336",
+            "input_cache_read": "0.000000007336",
             "input_cache_write": null
         },
         "supported_parameters": [
