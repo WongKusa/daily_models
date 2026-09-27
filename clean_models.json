@@ -1888,7 +1888,7 @@
     "glm-5.3": {
         "oid": "z-ai/glm-5.3",
         "hf_slug": "zai-org/GLM-5.3",
-        "name": "GLM 5.3",
+        "name": "GLM 5.3 (batch)",
         "author": "z-ai",
         "reasoning": true,
         "tool_call": true,
@@ -1902,25 +1902,29 @@
             ]
         },
         "limit": {
-            "context": 1310720,
+            "context": 1048576,
             "output": 131072
         },
         "pricing": {
-            "input": "0.0000004746",
-            "output": "0.0000014916",
-            "input_cache_read": "0.00000008814",
+            "input": "0.00000045",
+            "output": "0.000002",
+            "input_cache_read": "0.0000001",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "stop",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
@@ -1947,32 +1951,34 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 131072
+            "output": 262144
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.0000044",
-            "input_cache_read": "0.000000085",
+            "input": "0.0000000803",
+            "output": "0.00000245",
+            "input_cache_read": "0.0000000802",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "temperature",
+            "top_p",
+            "top_k",
+            "min_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
             "tool_choice",
             "logprobs",
-            "top_logprobs",
-            "temperature",
-            "top_p",
-            "top_k",
-            "max_tokens",
-            "stop",
-            "seed",
-            "frequency_penalty",
-            "presence_penalty",
-            "reasoning_effort"
+            "top_logprobs"
         ]
     },
     "gemini-3.7-flash": {
@@ -2193,12 +2199,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 1048576
+            "output": 393216
         },
         "pricing": {
-            "input": "0.00000025",
-            "output": "0.0000035",
-            "input_cache_read": "0.000000249",
+            "input": "0.0000002442",
+            "output": "0.0000007326",
+            "input_cache_read": "0.00000000777",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2206,20 +2212,11 @@
             "include_reasoning",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "seed",
             "max_tokens",
-            "logit_bias",
+            "stop",
             "response_format",
             "structured_outputs",
             "tools",
-            "logprobs",
-            "top_logprobs",
             "tool_choice"
         ]
     },
@@ -4721,27 +4718,25 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 393216
         },
         "pricing": {
-            "input": "0.000000418818",
-            "output": "0.000000837636",
-            "input_cache_read": "0.0000000349015",
+            "input": "0.00000034645",
+            "output": "0.0000006929",
+            "input_cache_read": "0.0000000287",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
-            "structured_outputs",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "max_tokens",
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "deepseek-v4-flash": {
@@ -4886,9 +4881,9 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.00000043415",
-            "output": "0.000001828",
-            "input_cache_read": "0.00000007312",
+            "input": "0.0000004085",
+            "output": "0.00000172",
+            "input_cache_read": "0.0000000688",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5056,11 +5051,11 @@
         },
         "limit": {
             "context": 262144,
-            "output": 131072
+            "output": 32768
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.00000034",
+            "input": "0.00000008",
+            "output": "0.0000003",
             "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
