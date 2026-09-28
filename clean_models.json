@@ -1888,7 +1888,7 @@
     "glm-5.3": {
         "oid": "z-ai/glm-5.3",
         "hf_slug": "zai-org/GLM-5.3",
-        "name": "GLM 5.3 (batch)",
+        "name": "GLM 5.3",
         "author": "z-ai",
         "reasoning": true,
         "tool_call": true,
@@ -1902,13 +1902,13 @@
             ]
         },
         "limit": {
-            "context": 1048576,
-            "output": 131072
+            "context": 1310720,
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.00000045",
-            "output": "0.000002",
-            "input_cache_read": "0.0000001",
+            "input": "0.0000004522",
+            "output": "0.000002805",
+            "input_cache_read": "0.000000146625",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1916,19 +1916,21 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "top_p",
             "stop",
+            "top_p",
+            "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
             "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.8-27b": {
@@ -1951,12 +1953,12 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 262144
+            "output": 32768
         },
         "pricing": {
-            "input": "0.0000000803",
-            "output": "0.00000245",
-            "input_cache_read": "0.0000000802",
+            "input": "0.00000005",
+            "output": "0.0000022",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1965,14 +1967,12 @@
             "temperature",
             "top_p",
             "top_k",
-            "min_p",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
             "stop",
             "seed",
             "max_tokens",
-            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
@@ -2199,12 +2199,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.0000002442",
-            "output": "0.0000007326",
-            "input_cache_read": "0.00000000777",
+            "input": "0.0000002523",
+            "output": "0.0000035",
+            "input_cache_read": "0.0000002518",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2212,11 +2212,20 @@
             "include_reasoning",
             "temperature",
             "top_p",
-            "max_tokens",
+            "top_k",
+            "min_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
             "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
+            "logprobs",
+            "top_logprobs",
             "tool_choice"
         ]
     },
@@ -2284,7 +2293,7 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.000000065",
+            "input": "0.000000039",
             "output": "0.00000018",
             "input_cache_read": null,
             "input_cache_write": null
@@ -3678,9 +3687,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.0000004886",
-            "output": "0.0000015356",
-            "input_cache_read": "0.00000009074",
+            "input": "0.00000049",
+            "output": "0.00000154",
+            "input_cache_read": "0.000000091",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3688,11 +3697,14 @@
             "include_reasoning",
             "temperature",
             "top_p",
-            "max_tokens",
+            "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
             "stop",
+            "seed",
+            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
@@ -4718,25 +4730,27 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 384000
         },
         "pricing": {
-            "input": "0.00000034645",
-            "output": "0.0000006929",
-            "input_cache_read": "0.0000000287",
+            "input": "0.00000095526",
+            "output": "0.00000191052",
+            "input_cache_read": "0.000000079605",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "tools",
+            "tool_choice",
+            "response_format",
+            "logprobs",
+            "top_logprobs",
+            "structured_outputs",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
-            "stop",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
+            "stop"
         ]
     },
     "deepseek-v4-flash": {
@@ -4881,24 +4895,29 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.0000004085",
-            "output": "0.00000172",
-            "input_cache_read": "0.0000000688",
+            "input": "0.00000045",
+            "output": "0.00000239",
+            "input_cache_read": "0.000000075",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
             "temperature",
-            "top_p",
             "max_tokens",
-            "frequency_penalty",
-            "presence_penalty",
+            "top_p",
             "stop",
+            "frequency_penalty",
+            "logit_bias",
+            "parallel_tool_calls",
+            "presence_penalty",
+            "seed",
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "claude-opus-4.7": {
@@ -4959,28 +4978,27 @@
         },
         "limit": {
             "context": 204800,
-            "output": 131072
+            "output": 128000
         },
         "pricing": {
-            "input": "0.0000009646",
-            "output": "0.0000030316",
-            "input_cache_read": "0.00000017914",
+            "input": "0.000000966",
+            "output": "0.000003036",
+            "input_cache_read": "0.0000001794",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
-            "top_p",
-            "max_tokens",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
+            "tools",
+            "tool_choice",
             "response_format",
             "structured_outputs",
-            "tools",
-            "tool_choice"
+            "logprobs",
+            "top_logprobs",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop"
         ]
     },
     "gemma-4-26b-a4b-it": {
