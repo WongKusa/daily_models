@@ -801,12 +801,12 @@
         },
         "limit": {
             "context": 1050000,
-            "output": 1048576
+            "output": 131072
         },
         "pricing": {
-            "input": "0.0000001",
-            "output": "0.00000028",
-            "input_cache_read": "0.00000009",
+            "input": "0.000000099",
+            "output": "0.000000252",
+            "input_cache_read": "0.0000000025",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -814,19 +814,19 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
             "seed",
+            "stop",
             "top_k",
-            "min_p",
-            "logit_bias",
-            "response_format",
-            "structured_outputs",
+            "top_p",
+            "presence_penalty",
+            "frequency_penalty",
             "repetition_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "mimo-v2.6-pro": {
@@ -2496,9 +2496,9 @@
             "output": 393216
         },
         "pricing": {
-            "input": "0.000000136",
+            "input": "0.0000001901",
             "output": "0.0000042",
-            "input_cache_read": "0.00000012",
+            "input_cache_read": "0.00000019",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2568,7 +2568,7 @@
         "name": "Nemotron 3.5 Lightning",
         "author": "nvidia",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -2603,7 +2603,9 @@
             "response_format",
             "structured_outputs",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tools",
+            "tool_choice"
         ]
     },
     "sakana-namazu": {
@@ -2796,7 +2798,7 @@
         "pricing": {
             "input": "0.0000000152",
             "output": "0.00000128",
-            "input_cache_read": "0.0000000137",
+            "input_cache_read": "0.0000000152",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3981,9 +3983,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.000000064",
-            "output": "0.000008",
-            "input_cache_read": "0.0000000576",
+            "input": "0.000000016",
+            "output": "0.000016",
+            "input_cache_read": "0.000000016",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5030,7 +5032,7 @@
         "pricing": {
             "input": "0.0000002067",
             "output": "0.0000042",
-            "input_cache_read": "0.00000019",
+            "input_cache_read": "0.00000021",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5072,9 +5074,9 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000224",
+            "input": "0.00000003",
             "output": "0.00000128",
-            "input_cache_read": "0.0000000202",
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -7879,22 +7881,22 @@
         },
         "limit": {
             "context": 262144,
-            "output": 209715
+            "output": 262144
         },
         "pricing": {
             "input": "0.0000005",
             "output": "0.0000015",
-            "input_cache_read": null,
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
             "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
             "response_format",
             "structured_outputs",
             "tools",
@@ -9128,22 +9130,20 @@
             "input_cache_write": null
         },
         "supported_parameters": [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p",
-            "response_format",
             "structured_outputs",
+            "response_format",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "seed",
+            "presence_penalty",
             "tools",
             "tool_choice",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "top_k",
+            "frequency_penalty",
+            "stop"
         ]
     },
     "qwen3-vl-30b-a3b-thinking": {
@@ -12037,7 +12037,8 @@
             "logprobs",
             "top_logprobs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "gemma-3-4b-it": {
