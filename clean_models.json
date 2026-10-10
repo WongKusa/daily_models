@@ -1737,7 +1737,7 @@
             "input": "0.000002",
             "output": "0.000006",
             "input_cache_read": "0.00000025",
-            "input_cache_write": "0.0000025"
+            "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
@@ -2087,7 +2087,7 @@
             "input": "0.00000015",
             "output": "0.00000047",
             "input_cache_read": "0.000000016",
-            "input_cache_write": "0.0000002"
+            "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
@@ -2415,12 +2415,12 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 262144
+            "output": 65536
         },
         "pricing": {
-            "input": "0.000000045",
-            "output": "0.00000435",
-            "input_cache_read": "0.0000000198",
+            "input": "0.00000004",
+            "output": "0.00000135",
+            "input_cache_read": "0.000000018",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2429,18 +2429,13 @@
             "temperature",
             "top_p",
             "top_k",
-            "min_p",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
+            "max_tokens",
             "stop",
             "seed",
-            "max_tokens",
-            "logit_bias",
-            "response_format",
             "structured_outputs",
             "tools",
             "tool_choice",
+            "response_format",
             "logprobs",
             "top_logprobs"
         ]
@@ -2663,12 +2658,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.000000135",
-            "output": "0.000008",
-            "input_cache_read": "0.00000014",
+            "input": "0.0000003",
+            "output": "0.000005",
+            "input_cache_read": "0.000000219",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2678,15 +2673,19 @@
             "top_p",
             "top_k",
             "min_p",
-            "stop",
-            "max_tokens",
-            "logit_bias",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
+            "response_format",
+            "structured_outputs",
             "tools",
-            "tool_choice",
-            "response_format"
+            "logprobs",
+            "top_logprobs",
+            "tool_choice"
         ]
     },
     "grok-4.6": {
@@ -2966,29 +2965,26 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.00000000832",
-            "output": "0.000000204351",
-            "input_cache_read": "0.00000000832",
+            "input": "0.0000000049",
+            "output": "0.00000128",
+            "input_cache_read": "0.0000000049",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "tools",
+            "tool_choice",
             "temperature",
-            "max_tokens",
-            "stop",
-            "seed",
-            "response_format",
             "top_p",
-            "frequency_penalty",
-            "presence_penalty",
             "top_k",
             "min_p",
+            "stop",
+            "max_tokens",
             "logit_bias",
-            "repetition_penalty",
-            "structured_outputs",
-            "tools",
-            "tool_choice"
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty"
         ]
     },
     "inkling-small": {
@@ -4102,27 +4098,26 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 131072
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.00000007",
-            "output": "0.0000043",
-            "input_cache_read": "0.00000007",
+            "input": "0.00000006",
+            "output": "0.000007",
+            "input_cache_read": "0.000000059",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
             "top_k",
+            "min_p",
             "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
             "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice"
         ]
@@ -4961,58 +4956,13 @@
             "tool_choice"
         ]
     },
-    "qwen3.6-max-preview": {
-        "oid": "qwen/qwen3.6-max-preview",
-        "hf_slug": null,
-        "name": "Qwen3.6 Max Preview",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 262144,
-            "output": 65536
-        },
-        "pricing": {
-            "input": "0.000001027",
-            "output": "0.000006162",
-            "input_cache_read": null,
-            "input_cache_write": "0.00000128375"
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "top_logprobs",
-            "logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "qwen3.6-27b": {
         "oid": "qwen/qwen3.6-27b",
         "hf_slug": "Qwen/Qwen3.6-27B",
         "name": "Qwen3.6 27B",
         "author": "qwen",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -5030,7 +4980,7 @@
         },
         "pricing": {
             "input": "0.00000029",
-            "output": "0.00000195",
+            "output": "0.0000025",
             "input_cache_read": "0.000000029",
             "input_cache_write": null
         },
@@ -5049,7 +4999,9 @@
             "response_format",
             "structured_outputs",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tools",
+            "tool_choice"
         ]
     },
     "gpt-5.5-pro": {
@@ -5197,9 +5149,9 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000057",
+            "input": "0.0000000085",
             "output": "0.00000128",
-            "input_cache_read": "0.0000000057",
+            "input_cache_read": "0.0000000085",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5320,7 +5272,7 @@
         "pricing": {
             "input": "0.000000465",
             "output": "0.00000245",
-            "input_cache_read": "0.0000000975",
+            "input_cache_read": "0.0000000875",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -6881,51 +6833,6 @@
             "top_logprobs"
         ]
     },
-    "qwen3-max-thinking": {
-        "oid": "qwen/qwen3-max-thinking",
-        "hf_slug": null,
-        "name": "Qwen3 Max Thinking",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 262144,
-            "output": 65536
-        },
-        "pricing": {
-            "input": "0.00000078",
-            "output": "0.0000039",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "claude-opus-4.6": {
         "oid": "anthropic/claude-opus-4.6",
         "hf_slug": "",
@@ -7073,23 +6980,28 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.00000045",
-            "output": "0.00000225",
-            "input_cache_read": "0.00000007",
+            "input": "0.00000049",
+            "output": "0.0000025",
+            "input_cache_read": "0.0000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
             "top_k",
+            "min_p",
             "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "logit_bias",
             "response_format",
-            "tools",
-            "tool_choice",
             "structured_outputs",
-            "max_tokens"
+            "tools",
+            "tool_choice"
         ]
     },
     "solar-pro-3": {
@@ -9046,50 +8958,6 @@
             "tools"
         ]
     },
-    "qwen3-vl-32b-it": {
-        "oid": "qwen/qwen3-vl-32b-instruct",
-        "hf_slug": "Qwen/Qwen3-VL-32B-Instruct",
-        "name": "Qwen3 VL 32B Instruct",
-        "author": "qwen",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 32768
-        },
-        "pricing": {
-            "input": "0.000000104",
-            "output": "0.000000416",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "granite-4.0-h-micro": {
         "oid": "ibm-granite/granite-4.0-h-micro",
         "hf_slug": "ibm-granite/granite-4.0-h-micro",
@@ -9175,52 +9043,6 @@
             "response_format"
         ]
     },
-    "qwen3-vl-8b-thinking": {
-        "oid": "qwen/qwen3-vl-8b-thinking",
-        "hf_slug": "Qwen/Qwen3-VL-8B-Thinking",
-        "name": "Qwen3 VL 8B Thinking",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "image",
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 32768
-        },
-        "pricing": {
-            "input": "0.00000018",
-            "output": "0.0000021",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "structured_outputs",
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "qwen3-vl-8b-it": {
         "oid": "qwen/qwen3-vl-8b-instruct",
         "hf_slug": "Qwen/Qwen3-VL-8B-Instruct",
@@ -9240,29 +9062,31 @@
         },
         "limit": {
             "context": 262144,
-            "output": 32768
+            "output": 262144
         },
         "pricing": {
-            "input": "0.000000117",
-            "output": "0.000000455",
-            "input_cache_read": null,
+            "input": "0.00000025",
+            "output": "0.00000075",
+            "input_cache_read": "0.00000012",
             "input_cache_write": null
         },
         "supported_parameters": [
-            "structured_outputs",
-            "response_format",
             "max_tokens",
             "temperature",
             "top_p",
-            "seed",
+            "frequency_penalty",
             "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "top_k",
+            "logit_bias",
             "tools",
             "tool_choice",
+            "response_format",
+            "structured_outputs",
             "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
+            "top_logprobs"
         ]
     },
     "qwen3-vl-30b-a3b-thinking": {
@@ -9284,31 +9108,26 @@
         },
         "limit": {
             "context": 262144,
-            "output": 32768
+            "output": 262144
         },
         "pricing": {
-            "input": "0.0000002",
-            "output": "0.0000024",
+            "input": "0.00000029",
+            "output": "0.000001",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
+            "structured_outputs",
+            "response_format",
             "temperature",
             "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
             "top_k",
             "frequency_penalty",
-            "stop"
+            "tools",
+            "tool_choice",
+            "max_tokens"
         ]
     },
     "qwen3-vl-30b-a3b-it": {
@@ -9330,11 +9149,11 @@
         },
         "limit": {
             "context": 262144,
-            "output": 32768
+            "output": 16384
         },
         "pricing": {
-            "input": "0.00000013",
-            "output": "0.00000052",
+            "input": "0.00000015",
+            "output": "0.0000006",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -9342,17 +9161,18 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "seed",
+            "stop",
+            "frequency_penalty",
             "presence_penalty",
-            "response_format",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
+            "response_format"
         ]
     },
     "gpt-5-pro": {
@@ -9594,52 +9414,6 @@
             "max_tokens"
         ]
     },
-    "qwen3-vl-235b-a22b-thinking": {
-        "oid": "qwen/qwen3-vl-235b-a22b-thinking",
-        "hf_slug": "Qwen/Qwen3-VL-235B-A22B-Thinking",
-        "name": "Qwen3 VL 235B A22B Thinking",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 32768
-        },
-        "pricing": {
-            "input": "0.0000004",
-            "output": "0.000004",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "qwen3-vl-235b-a22b-it": {
         "oid": "qwen/qwen3-vl-235b-a22b-instruct",
         "hf_slug": "Qwen/Qwen3-VL-235B-A22B-Instruct",
@@ -9683,92 +9457,6 @@
             "tools",
             "tool_choice",
             "response_format"
-        ]
-    },
-    "qwen3-max": {
-        "oid": "qwen/qwen3-max",
-        "hf_slug": "",
-        "name": "Qwen3 Max",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 262144,
-            "output": 65536
-        },
-        "pricing": {
-            "input": "0.00000078",
-            "output": "0.0000039",
-            "input_cache_read": "0.000000156",
-            "input_cache_write": "0.000000975"
-        },
-        "supported_parameters": [
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "tools",
-            "tool_choice",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
-    "qwen3-coder-plus": {
-        "oid": "qwen/qwen3-coder-plus",
-        "hf_slug": "",
-        "name": "Qwen3 Coder Plus",
-        "author": "qwen",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1000000,
-            "output": 65536
-        },
-        "pricing": {
-            "input": "0.00000065",
-            "output": "0.00000325",
-            "input_cache_read": "0.00000013",
-            "input_cache_write": "0.0000008125"
-        },
-        "supported_parameters": [
-            "structured_outputs",
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
         ]
     },
     "deepseek-v3.1-terminus": {
@@ -9943,49 +9631,6 @@
             "response_format"
         ]
     },
-    "qwen-plus-2025-07-28": {
-        "oid": "qwen/qwen-plus-2025-07-28",
-        "hf_slug": "",
-        "name": "Qwen Plus 0728",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1000000,
-            "output": 32768
-        },
-        "pricing": {
-            "input": "0.00000026",
-            "output": "0.00000078",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "structured_outputs",
-            "response_format",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "kimi-k2-0905": {
         "oid": "moonshotai/kimi-k2-0905",
         "hf_slug": "moonshotai/Kimi-K2-Instruct-0905",
@@ -10026,48 +9671,6 @@
             "tools",
             "tool_choice",
             "structured_outputs"
-        ]
-    },
-    "qwen3-30b-a3b-thinking-2507": {
-        "oid": "qwen/qwen3-30b-a3b-thinking-2507",
-        "hf_slug": "Qwen/Qwen3-30B-A3B-Thinking-2507",
-        "name": "Qwen3 30B A3B Thinking 2507",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 81920,
-            "output": 32768
-        },
-        "pricing": {
-            "input": "0.0000002",
-            "output": "0.0000024",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "top_k",
-            "frequency_penalty",
-            "stop"
         ]
     },
     "hermes-4-405b": {
@@ -10379,32 +9982,26 @@
         },
         "limit": {
             "context": 131072,
-            "output": 131072
+            "output": 32768
         },
         "pricing": {
             "input": "0.00000003",
-            "output": "0.00000017",
+            "output": "0.00000015",
             "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "structured_outputs",
-            "response_format",
             "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "repetition_penalty",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "stop",
-            "seed",
+            "top_k",
             "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "tool_choice"
         ]
     },
     "gpt-oss-20b": {
@@ -10591,26 +10188,29 @@
         },
         "limit": {
             "context": 262144,
-            "output": 32000
+            "output": null
         },
         "pricing": {
-            "input": "0.00000004815",
-            "output": "0.00000019305",
+            "input": "0.00000009",
+            "output": "0.0000003",
             "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
-            "tools",
-            "tool_choice",
-            "response_format",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
+            "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "presence_penalty",
+            "seed",
+            "stop",
             "temperature",
             "top_p",
-            "stop",
-            "presence_penalty"
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "glm-4.5": {
@@ -10710,12 +10310,12 @@
             ]
         },
         "limit": {
-            "context": 131072,
-            "output": null
+            "context": 128000,
+            "output": 16384
         },
         "pricing": {
-            "input": "0.00000023",
-            "output": "0.0000023",
+            "input": "0.00000045",
+            "output": "0.0000035",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -10725,14 +10325,12 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "top_k",
+            "stop",
             "frequency_penalty",
-            "stop"
+            "presence_penalty",
+            "top_k",
+            "tools",
+            "tool_choice"
         ]
     },
     "qwen3-coder": {
@@ -11478,7 +11076,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 40960,
             "output": 16384
         },
         "pricing": {
@@ -11507,48 +11105,6 @@
             "structured_outputs"
         ]
     },
-    "qwen3-8b": {
-        "oid": "qwen/qwen3-8b",
-        "hf_slug": "Qwen/Qwen3-8B",
-        "name": "Qwen3 8B",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 8192
-        },
-        "pricing": {
-            "input": "0.000000117",
-            "output": "0.000000455",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "top_k",
-            "frequency_penalty",
-            "stop"
-        ]
-    },
     "qwen3-14b": {
         "oid": "qwen/qwen3-14b",
         "hf_slug": "Qwen/Qwen3-14B",
@@ -11566,7 +11122,7 @@
             ]
         },
         "limit": {
-            "context": 131072,
+            "context": 40960,
             "output": 40960
         },
         "pricing": {
@@ -11636,48 +11192,6 @@
             "structured_outputs",
             "logit_bias",
             "response_format"
-        ]
-    },
-    "qwen3-235b-a22b": {
-        "oid": "qwen/qwen3-235b-a22b",
-        "hf_slug": "Qwen/Qwen3-235B-A22B",
-        "name": "Qwen3 235B A22B",
-        "author": "qwen",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 8192
-        },
-        "pricing": {
-            "input": "0.000000455",
-            "output": "0.00000182",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "seed",
-            "presence_penalty",
-            "response_format",
-            "tools",
-            "tool_choice",
-            "top_k",
-            "frequency_penalty",
-            "stop"
         ]
     },
     "o4-mini-high": {
@@ -13609,47 +13123,6 @@
             "response_format"
         ]
     },
-    "command-r-plus-08-2024": {
-        "oid": "cohere/command-r-plus-08-2024",
-        "hf_slug": null,
-        "name": "Command R+ (08-2024)",
-        "author": "cohere",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 4000
-        },
-        "pricing": {
-            "input": "0.0000025",
-            "output": "0.00001",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "top_k",
-            "seed",
-            "structured_outputs",
-            "response_format",
-            "tools",
-            "tool_choice"
-        ]
-    },
     "command-r-08-2024": {
         "oid": "cohere/command-r-08-2024",
         "hf_slug": null,
@@ -13673,6 +13146,47 @@
         "pricing": {
             "input": "0.00000015",
             "output": "0.0000006",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "top_k",
+            "seed",
+            "structured_outputs",
+            "response_format",
+            "tools",
+            "tool_choice"
+        ]
+    },
+    "command-r-plus-08-2024": {
+        "oid": "cohere/command-r-plus-08-2024",
+        "hf_slug": null,
+        "name": "Command R+ (08-2024)",
+        "author": "cohere",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 4000
+        },
+        "pricing": {
+            "input": "0.0000025",
+            "output": "0.00001",
             "input_cache_read": null,
             "input_cache_write": null
         },
@@ -14030,6 +13544,50 @@
             "top_logprobs"
         ]
     },
+    "gpt-4o-mini": {
+        "oid": "openai/gpt-4o-mini",
+        "hf_slug": null,
+        "name": "GPT-4o-mini",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.00000015",
+            "output": "0.0000006",
+            "input_cache_read": "0.000000075",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "temperature",
+            "top_p",
+            "max_completion_tokens",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
+        ]
+    },
     "gpt-4o-mini-2024-07-18": {
         "oid": "openai/gpt-4o-mini-2024-07-18",
         "hf_slug": null,
@@ -14077,50 +13635,6 @@
             "web_search_options"
         ]
     },
-    "gpt-4o-mini": {
-        "oid": "openai/gpt-4o-mini",
-        "hf_slug": null,
-        "name": "GPT-4o-mini",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.00000015",
-            "output": "0.0000006",
-            "input_cache_read": "0.000000075",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "temperature",
-            "top_p",
-            "max_completion_tokens",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
-        ]
-    },
     "gemma-2-27b-it": {
         "oid": "google/gemma-2-27b-it",
         "hf_slug": "google/gemma-2-27b-it",
@@ -14160,52 +13674,6 @@
             "seed"
         ]
     },
-    "gpt-4o-2024-05-13": {
-        "oid": "openai/gpt-4o-2024-05-13",
-        "hf_slug": null,
-        "name": "GPT-4o (2024-05-13)",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image",
-                "file"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 128000,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.000005",
-            "output": "0.000015",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "temperature",
-            "top_p",
-            "max_completion_tokens",
-            "tools",
-            "tool_choice",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "web_search_options",
-            "seed",
-            "logit_bias",
-            "logprobs",
-            "top_logprobs",
-            "response_format",
-            "structured_outputs"
-        ]
-    },
     "gpt-4o": {
         "oid": "openai/gpt-4o",
         "hf_slug": null,
@@ -14231,6 +13699,52 @@
         "pricing": {
             "input": "0.0000025",
             "output": "0.00001",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "temperature",
+            "top_p",
+            "max_completion_tokens",
+            "tools",
+            "tool_choice",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "web_search_options",
+            "seed",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
+        ]
+    },
+    "gpt-4o-2024-05-13": {
+        "oid": "openai/gpt-4o-2024-05-13",
+        "hf_slug": null,
+        "name": "GPT-4o (2024-05-13)",
+        "author": "openai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image",
+                "file"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 4096
+        },
+        "pricing": {
+            "input": "0.000005",
+            "output": "0.000015",
             "input_cache_read": null,
             "input_cache_write": null
         },
