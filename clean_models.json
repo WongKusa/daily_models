@@ -60,30 +60,29 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 524288
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.0000001",
-            "output": "0.00000055",
+            "input": "0.00000009",
+            "output": "0.0000005",
             "input_cache_read": "0.00000001",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
             "top_k",
             "min_p",
+            "stop",
+            "max_tokens",
+            "seed",
             "logit_bias",
-            "response_format",
-            "structured_outputs",
+            "frequency_penalty",
+            "presence_penalty",
             "repetition_penalty",
+            "response_format",
             "tools",
             "tool_choice"
         ]
@@ -3280,6 +3279,54 @@
             "tool_choice"
         ]
     },
+    "lfm-2.5-2.6b": {
+        "oid": "liquid/lfm-2.5-2.6b",
+        "hf_slug": "LiquidAI/LFM2.5-2.6B",
+        "name": "LFM2.5-2.6B",
+        "author": "liquid",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 128000,
+            "output": 8192
+        },
+        "pricing": {
+            "input": "0.00000035",
+            "output": "0.0000005",
+            "input_cache_read": "0.00000004",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "min_p",
+            "repetition_penalty",
+            "max_completion_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
+        ]
+    },
     "nemotron-3.5-lightning": {
         "oid": "nvidia/nemotron-3.5-lightning",
         "hf_slug": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
@@ -5655,27 +5702,25 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 393216
         },
         "pricing": {
-            "input": "0.000000601344",
-            "output": "0.000001202688",
-            "input_cache_read": "0.000000050112",
+            "input": "0.00000020787",
+            "output": "0.00000041574",
+            "input_cache_read": "0.00000001722",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
-            "structured_outputs",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "max_tokens",
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "deepseek-v4-flash": {
@@ -5699,9 +5744,9 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000407",
+            "input": "0.0000000224",
             "output": "0.00000045",
-            "input_cache_read": "0.0000000407",
+            "input_cache_read": "0.0000000224",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -14383,47 +14428,6 @@
             "structured_outputs"
         ]
     },
-    "gpt-3.5-turbo-it": {
-        "oid": "openai/gpt-3.5-turbo-instruct",
-        "hf_slug": null,
-        "name": "GPT-3.5 Turbo Instruct",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 4095,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.0000015",
-            "output": "0.000002",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "presence_penalty",
-            "stop",
-            "temperature",
-            "top_logprobs",
-            "top_p"
-        ]
-    },
     "gpt-3.5-turbo-16k": {
         "oid": "openai/gpt-3.5-turbo-16k",
         "hf_slug": null,
@@ -14596,49 +14600,6 @@
             "logprobs",
             "top_logprobs",
             "structured_outputs"
-        ]
-    },
-    "gpt-3.5-turbo": {
-        "oid": "openai/gpt-3.5-turbo",
-        "hf_slug": null,
-        "name": "GPT-3.5 Turbo",
-        "author": "openai",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 16385,
-            "output": 4096
-        },
-        "pricing": {
-            "input": "0.0000005",
-            "output": "0.0000015",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "tools",
-            "tool_choice",
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "presence_penalty",
-            "stop",
-            "temperature",
-            "top_logprobs",
-            "top_p"
         ]
     },
     "gpt-4": {
