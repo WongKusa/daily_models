@@ -1,4 +1,169 @@
 {
+    "titan-embed-image-v1": {
+        "oid": "amazon/titan-embed-image-v1",
+        "hf_slug": null,
+        "name": "Titan Multimodal Embeddings G1",
+        "author": "amazon",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image"
+            ],
+            "output": [
+                "embeddings"
+            ]
+        },
+        "limit": {
+            "context": 128,
+            "output": null
+        },
+        "pricing": {
+            "input": "0.0000008",
+            "output": "0",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": []
+    },
+    "titan-embed-text-v1": {
+        "oid": "amazon/titan-embed-text-v1",
+        "hf_slug": null,
+        "name": "Titan Embeddings G1 - Text",
+        "author": "amazon",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "embeddings"
+            ]
+        },
+        "limit": {
+            "context": 8192,
+            "output": null
+        },
+        "pricing": {
+            "input": "0.0000001",
+            "output": "0",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": []
+    },
+    "titan-embed-text-v2": {
+        "oid": "amazon/titan-embed-text-v2",
+        "hf_slug": null,
+        "name": "Titan Text Embeddings V2",
+        "author": "amazon",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "embeddings"
+            ]
+        },
+        "limit": {
+            "context": 8192,
+            "output": null
+        },
+        "pricing": {
+            "input": "0.00000002",
+            "output": "0",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": []
+    },
+    "gpt-6.1-terra-pro": {
+        "oid": "openai/gpt-6.1-terra-pro",
+        "hf_slug": null,
+        "name": "GPT-6.1 Terra Pro",
+        "author": "openai",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "file",
+                "image",
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1050000,
+            "output": 128000
+        },
+        "pricing": {
+            "input": "0.000001",
+            "output": "0.000005",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.00000125"
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "verbosity"
+        ]
+    },
+    "gpt-6.1-terra": {
+        "oid": "openai/gpt-6.1-terra",
+        "hf_slug": null,
+        "name": "GPT-6.1 Terra",
+        "author": "openai",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "file",
+                "image",
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 1050000,
+            "output": 128000
+        },
+        "pricing": {
+            "input": "0.000001",
+            "output": "0.000005",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.00000125"
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "verbosity"
+        ]
+    },
     "kimi-k3.1-pro": {
         "oid": "moonshotai/kimi-k3.1-pro",
         "hf_slug": null,
@@ -37,7 +202,9 @@
             "structured_outputs",
             "response_format",
             "tool_choice",
-            "tools"
+            "tools",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "minimax-m3.1-flash": {
@@ -60,28 +227,21 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 1048576
+            "output": null
         },
         "pricing": {
-            "input": "0.00000009",
-            "output": "0.0000005",
-            "input_cache_read": "0.00000001",
+            "input": "0.0000001425",
+            "output": "0.00000057",
+            "input_cache_read": "0.00000001425",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
-            "min_p",
-            "stop",
-            "max_tokens",
             "seed",
-            "logit_bias",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "tools",
             "tool_choice"
@@ -110,7 +270,7 @@
         },
         "pricing": {
             "input": "0.00000002",
-            "output": "0.000001",
+            "output": "0.000000081571",
             "input_cache_read": "0.000000015",
             "input_cache_write": null
         },
@@ -201,9 +361,9 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.00000024",
-            "output": "0.00000098",
-            "input_cache_read": "0.000000035",
+            "input": "0.00000025",
+            "output": "0.000001",
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -211,20 +371,20 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "seed",
-            "stop",
-            "top_k",
             "top_p",
-            "presence_penalty",
-            "reasoning_effort",
+            "stop",
             "frequency_penalty",
-            "repetition_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "logit_bias",
+            "logprobs",
+            "top_logprobs",
             "response_format",
-            "structured_outputs",
             "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "structured_outputs",
+            "repetition_penalty"
         ]
     },
     "mercury-3": {
@@ -383,7 +543,8 @@
             "structured_outputs",
             "tools",
             "logprobs",
-            "top_logprobs"
+            "top_logprobs",
+            "tool_choice"
         ]
     },
     "nemotron-3.5-super-vl": {
@@ -429,7 +590,9 @@
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "pareto-26.10": {
@@ -2543,11 +2706,11 @@
         },
         "limit": {
             "context": 131072,
-            "output": null
+            "output": 131072
         },
         "pricing": {
             "input": "0.00000006",
-            "output": "0.00000025",
+            "output": "0.00000015",
             "input_cache_read": "0.000000015",
             "input_cache_write": null
         },
@@ -2557,16 +2720,18 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
+            "repetition_penalty",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
-            "top_k",
+            "stop",
             "seed",
-            "min_p",
-            "logit_bias",
+            "response_format",
+            "structured_outputs",
             "tools",
-            "response_format"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "hy4-preview": {
@@ -2587,7 +2752,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 131072
+            "output": 64000
         },
         "pricing": {
             "input": "0.000000834",
@@ -2601,19 +2766,17 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
-            "top_k",
+            "repetition_penalty",
             "seed",
-            "structured_outputs",
+            "logit_bias",
             "response_format",
+            "structured_outputs",
             "tools",
-            "tool_choice",
-            "parallel_tool_calls",
-            "logprobs",
-            "top_logprobs",
-            "repetition_penalty"
+            "tool_choice"
         ]
     },
     "qwen3.8-flash": {
@@ -2666,7 +2829,7 @@
     "glm-5.3-flash": {
         "oid": "z-ai/glm-5.3-flash",
         "hf_slug": "zai-org/GLM-5.3-Flash",
-        "name": "GLM 5.3 Flash (batch)",
+        "name": "GLM 5.3 Flash",
         "author": "z-ai",
         "reasoning": true,
         "tool_call": true,
@@ -2686,28 +2849,25 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.00000005",
-            "output": "0.00000018",
-            "input_cache_read": "0.00000001",
+            "input": "0.0000000513",
+            "output": "0.0000000701",
+            "input_cache_read": "0.00000003",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "top_k",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "stop",
             "seed",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
+            "top_k",
+            "repetition_penalty",
             "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "tool_choice"
         ]
     },
     "muse-spark-1.2-contributor": {
@@ -2969,12 +3129,12 @@
         },
         "limit": {
             "context": 1000000,
-            "output": 65536
+            "output": 32768
         },
         "pricing": {
-            "input": "0.00000002",
-            "output": "0.0000005",
-            "input_cache_read": "0.000000009",
+            "input": "0.000000035",
+            "output": "0.0000022",
+            "input_cache_read": "0.0000000175",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -2983,9 +3143,14 @@
             "temperature",
             "top_p",
             "top_k",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
             "stop",
             "seed",
             "max_tokens",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
             "logprobs",
@@ -3213,9 +3378,9 @@
             "output": 393216
         },
         "pricing": {
-            "input": "0.0000002565",
+            "input": "0.0000002211",
             "output": "0.000008",
-            "input_cache_read": "0.00000026",
+            "input_cache_read": "0.00000022",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -4743,8 +4908,8 @@
             "output": 262144
         },
         "pricing": {
-            "input": "0.0000006712",
-            "output": "0.00000335",
+            "input": "0.00000056",
+            "output": "0.0000031",
             "input_cache_read": "0.00000015",
             "input_cache_write": null
         },
@@ -5869,9 +6034,9 @@
             "output": 65535
         },
         "pricing": {
-            "input": "0.00000045",
-            "output": "0.00000195",
-            "input_cache_read": "0.000000045",
+            "input": "0.00000039",
+            "output": "0.0000018",
+            "input_cache_read": "0.000000039",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5949,27 +6114,30 @@
         },
         "limit": {
             "context": 204800,
-            "output": 128000
+            "output": 65535
         },
         "pricing": {
-            "input": "0.000000966",
-            "output": "0.000003036",
-            "input_cache_read": "0.0000001794",
+            "input": "0.0000009",
+            "output": "0.0000029",
+            "input_cache_read": "0.00000009",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "structured_outputs",
-            "logprobs",
-            "top_logprobs",
             "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "response_format"
         ]
     },
     "gemma-4-26b-a4b-it": {
@@ -6153,43 +6321,6 @@
             "tool_choice",
             "response_format",
             "top_k"
-        ]
-    },
-    "trinity-large-thinking": {
-        "oid": "arcee-ai/trinity-large-thinking",
-        "hf_slug": "arcee-ai/Trinity-Large-Thinking",
-        "name": "Trinity Large Thinking",
-        "author": "arcee-ai",
-        "reasoning": true,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 262144,
-            "output": 80000
-        },
-        "pricing": {
-            "input": "0.00000025",
-            "output": "0.0000008",
-            "input_cache_read": "0.00000006",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "reasoning",
-            "include_reasoning",
-            "max_tokens",
-            "temperature",
-            "top_k",
-            "top_p",
-            "tools",
-            "tool_choice"
         ]
     },
     "grok-4.20-multi-agent": {
@@ -9558,49 +9689,6 @@
             "top_p",
             "tool_choice",
             "tools"
-        ]
-    },
-    "granite-4.0-h-micro": {
-        "oid": "ibm-granite/granite-4.0-h-micro",
-        "hf_slug": "ibm-granite/granite-4.0-h-micro",
-        "name": "Granite 4.0 Micro",
-        "author": "ibm-granite",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131000,
-            "output": 131000
-        },
-        "pricing": {
-            "input": "0.000000017",
-            "output": "0.000000112",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias",
-            "response_format",
-            "logprobs",
-            "top_logprobs"
         ]
     },
     "claude-haiku-4.5": {
@@ -13493,46 +13581,6 @@
             "tool_choice"
         ]
     },
-    "llama-3.2-1b-it": {
-        "oid": "meta-llama/llama-3.2-1b-instruct",
-        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
-        "name": "Llama 3.2 1B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 60000,
-            "output": 60000
-        },
-        "pricing": {
-            "input": "0.000000027",
-            "output": "0.000000201",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "seed",
-            "repetition_penalty",
-            "frequency_penalty",
-            "presence_penalty",
-            "min_p",
-            "stop",
-            "logit_bias"
-        ]
-    },
     "llama-3.2-3b-it": {
         "oid": "meta-llama/llama-3.2-3b-instruct",
         "hf_slug": "meta-llama/Llama-3.2-3B-Instruct",
@@ -13573,6 +13621,46 @@
             "structured_outputs",
             "logprobs",
             "top_logprobs"
+        ]
+    },
+    "llama-3.2-1b-it": {
+        "oid": "meta-llama/llama-3.2-1b-instruct",
+        "hf_slug": "meta-llama/Llama-3.2-1B-Instruct",
+        "name": "Llama 3.2 1B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 60000,
+            "output": 60000
+        },
+        "pricing": {
+            "input": "0.000000027",
+            "output": "0.000000201",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "seed",
+            "repetition_penalty",
+            "frequency_penalty",
+            "presence_penalty",
+            "min_p",
+            "stop",
+            "logit_bias"
         ]
     },
     "qwen-2.5-72b-it": {
@@ -13914,6 +14002,47 @@
             "structured_outputs"
         ]
     },
+    "llama-3.1-8b-it": {
+        "oid": "meta-llama/llama-3.1-8b-instruct",
+        "hf_slug": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        "name": "Llama 3.1 8B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 16384
+        },
+        "pricing": {
+            "input": "0.00000002",
+            "output": "0.00000004",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
+            "response_format"
+        ]
+    },
     "llama-3.1-70b-it": {
         "oid": "meta-llama/llama-3.1-70b-instruct",
         "hf_slug": "meta-llama/Meta-Llama-3.1-70B-Instruct",
@@ -13956,47 +14085,6 @@
             "tool_choice",
             "logit_bias",
             "structured_outputs"
-        ]
-    },
-    "llama-3.1-8b-it": {
-        "oid": "meta-llama/llama-3.1-8b-instruct",
-        "hf_slug": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-        "name": "Llama 3.1 8B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": false,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 16384
-        },
-        "pricing": {
-            "input": "0.00000002",
-            "output": "0.00000004",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "top_k",
-            "seed",
-            "min_p",
-            "logit_bias",
-            "response_format"
         ]
     },
     "mistral-nemo": {
