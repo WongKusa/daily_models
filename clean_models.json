@@ -1862,8 +1862,8 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.000000087",
-            "output": "0.000000187",
+            "input": "0.0000001",
+            "output": "0.00000028",
             "input_cache_read": "0.000000003",
             "input_cache_write": null
         },
@@ -1872,16 +1872,19 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
             "seed",
+            "stop",
             "top_k",
+            "top_p",
+            "presence_penalty",
+            "frequency_penalty",
             "repetition_penalty",
             "tools",
             "tool_choice",
-            "response_format"
+            "logprobs",
+            "top_logprobs",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "mimo-v2.6-pro": {
@@ -1908,9 +1911,9 @@
             "output": null
         },
         "pricing": {
-            "input": "0.00000036975",
-            "output": "0.0000007395",
-            "input_cache_read": "0.0000000034",
+            "input": "0.000000387",
+            "output": "0.000000783",
+            "input_cache_read": "0.00000000324",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -1919,7 +1922,14 @@
             "max_tokens",
             "temperature",
             "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
             "seed",
+            "min_p",
+            "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
@@ -3212,8 +3222,8 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.000000005",
-            "output": "0.000000301",
+            "input": "0.000000006",
+            "output": "0.000000305",
             "input_cache_read": "0.000000005",
             "input_cache_write": null
         },
@@ -3809,7 +3819,7 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000434",
+            "input": "0.000000059",
             "output": "0.0000003",
             "input_cache_read": "0.000000035",
             "input_cache_write": null
@@ -4900,7 +4910,9 @@
             "stop",
             "seed",
             "max_tokens",
-            "logit_bias"
+            "logit_bias",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "kimi-k2.7-code": {
@@ -5712,27 +5724,27 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.00000005",
-            "output": "0.0000007",
-            "input_cache_read": "0.000000025",
+            "input": "0.00000001",
+            "output": "0.000000092",
+            "input_cache_read": "0.000000009",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
-            "top_p",
-            "top_k",
             "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "stop",
             "seed",
-            "max_tokens",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p",
             "response_format",
             "structured_outputs",
-            "logprobs",
-            "top_logprobs",
             "tools",
             "tool_choice"
         ]
@@ -5883,27 +5895,30 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 393216
         },
         "pricing": {
-            "input": "0.000000393588",
-            "output": "0.000000787176",
-            "input_cache_read": "0.000000032799",
+            "input": "0.0000009",
+            "output": "0.0000015",
+            "input_cache_read": "0.00000025",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
-            "structured_outputs",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "top_k",
+            "min_p",
+            "stop",
+            "max_tokens",
+            "logit_bias",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "tools",
+            "tool_choice",
+            "response_format"
         ]
     },
     "deepseek-v4-flash": {
@@ -5927,9 +5942,9 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000386",
+            "input": "0.00000005",
             "output": "0.00000045",
-            "input_cache_read": "0.0000000386",
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -6045,27 +6060,29 @@
         },
         "limit": {
             "context": 262144,
-            "output": 262144
+            "output": 65535
         },
         "pricing": {
-            "input": "0.0000003895",
-            "output": "0.00000164",
-            "input_cache_read": "0.0000000656",
+            "input": "0.00000039",
+            "output": "0.0000018",
+            "input_cache_read": "0.000000039",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "stop",
-            "response_format",
-            "structured_outputs",
+            "seed",
+            "top_k",
+            "repetition_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "claude-opus-4.7": {
@@ -6126,28 +6143,30 @@
         },
         "limit": {
             "context": 204800,
-            "output": 131072
+            "output": 65535
         },
         "pricing": {
-            "input": "0.0000008988",
-            "output": "0.0000028248",
-            "input_cache_read": "0.00000016692",
+            "input": "0.0000009",
+            "output": "0.0000029",
+            "input_cache_read": "0.00000009",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "max_tokens",
             "temperature",
             "top_p",
-            "max_tokens",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
+            "seed",
+            "top_k",
             "repetition_penalty",
-            "stop",
-            "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "response_format"
         ]
     },
     "gemma-4-26b-a4b-it": {
@@ -6173,8 +6192,8 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.000000021",
-            "output": "0.000000062",
+            "input": "0.000000024",
+            "output": "0.0000001",
             "input_cache_read": "0.00000001",
             "input_cache_write": null
         },
@@ -6184,13 +6203,16 @@
             "temperature",
             "top_p",
             "top_k",
-            "min_p",
+            "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
+            "stop",
+            "seed",
             "max_tokens",
-            "max_completion_tokens",
             "response_format",
             "structured_outputs",
+            "logprobs",
+            "top_logprobs",
             "tools",
             "tool_choice"
         ]
@@ -6822,9 +6844,9 @@
             "output": 40960
         },
         "pricing": {
-            "input": "0.000000017",
-            "output": "0.000000025",
-            "input_cache_read": "0.000000015",
+            "input": "0.000000018",
+            "output": "0.000000026",
+            "input_cache_read": "0.000000016",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -6840,6 +6862,7 @@
             "min_p",
             "presence_penalty",
             "repetition_penalty",
+            "stop",
             "max_tokens",
             "max_completion_tokens"
         ]
