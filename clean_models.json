@@ -641,7 +641,7 @@
             "output": 131072
         },
         "pricing": {
-            "input": "0.00000005",
+            "input": "0.00000006",
             "output": "0.0000005",
             "input_cache_read": "0.000000003",
             "input_cache_write": null
@@ -856,21 +856,25 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.0000007",
-            "output": "0.000006",
-            "input_cache_read": "0.0000001",
+            "input": "0.000000346",
+            "output": "0.00000441",
+            "input_cache_read": "0.000000111",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
-            "top_k"
+            "stop",
+            "top_p",
+            "top_k",
+            "min_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "logit_bias"
         ]
     },
     "minimax-m3.1-flash": {
@@ -928,7 +932,7 @@
         "name": "DeepSeek V4.1 Flash 1017 (batch)",
         "author": "deepseek",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -941,25 +945,31 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.00000005",
-            "output": "0.00000015",
-            "input_cache_read": "0.000000004",
+            "input": "0.000000045",
+            "output": "0.00000025",
+            "input_cache_read": "0.000000002",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
-            "seed",
-            "stop",
             "temperature",
+            "stop",
+            "top_p",
             "top_k",
-            "top_p"
+            "min_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "logit_bias",
+            "tools",
+            "tool_choice",
+            "structured_outputs"
         ]
     },
     "glimpse": {
@@ -3662,12 +3672,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 131072
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.00000045",
-            "output": "0.000002",
-            "input_cache_read": "0.0000001",
+            "input": "0.000000347",
+            "output": "0.000001068",
+            "input_cache_read": "0.000000117",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -3675,19 +3685,21 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "top_p",
             "stop",
+            "top_p",
+            "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
             "seed",
-            "min_p",
             "logit_bias",
             "response_format",
             "structured_outputs",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "qwen3.8-27b": {
@@ -5313,7 +5325,7 @@
     "glm-5.2": {
         "oid": "z-ai/glm-5.2",
         "hf_slug": "zai-org/GLM-5.2",
-        "name": "GLM 5.2 (batch)",
+        "name": "GLM 5.2",
         "author": "z-ai",
         "reasoning": true,
         "tool_call": true,
@@ -5328,12 +5340,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 1048576
+            "output": 131072
         },
         "pricing": {
-            "input": "0.000000298",
-            "output": "0.000000916",
-            "input_cache_read": "0.000000101",
+            "input": "0.0000000066",
+            "output": "0.0000079833",
+            "input_cache_read": "0.0000000066",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -5341,21 +5353,16 @@
             "include_reasoning",
             "max_tokens",
             "temperature",
-            "stop",
             "top_p",
-            "top_k",
-            "min_p",
+            "stop",
             "frequency_penalty",
             "presence_penalty",
-            "repetition_penalty",
             "seed",
-            "logit_bias",
+            "top_k",
+            "repetition_penalty",
             "response_format",
-            "structured_outputs",
             "tools",
-            "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "tool_choice"
         ]
     },
     "kimi-k2.7-code": {
@@ -6165,9 +6172,9 @@
             "output": 65536
         },
         "pricing": {
-            "input": "0.000000011",
-            "output": "0.000000103",
-            "input_cache_read": "0.00000001",
+            "input": "0.000000029",
+            "output": "0.000000265",
+            "input_cache_read": "0.000000026",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -6334,27 +6341,25 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 384000
+            "output": 393216
         },
         "pricing": {
-            "input": "0.00000040368",
-            "output": "0.00000080736",
-            "input_cache_read": "0.00000003364",
+            "input": "0.00000020787",
+            "output": "0.00000041574",
+            "input_cache_read": "0.00000001722",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "tools",
-            "tool_choice",
-            "response_format",
-            "logprobs",
-            "top_logprobs",
-            "structured_outputs",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop"
+            "max_tokens",
+            "stop",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "deepseek-v4-flash": {
@@ -6378,9 +6383,9 @@
             "output": 1048576
         },
         "pricing": {
-            "input": "0.000000029",
+            "input": "0.000000014",
             "output": "0.00000045",
-            "input_cache_read": "0.000000029",
+            "input_cache_read": "0.000000014",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -6630,9 +6635,9 @@
             "output": 32768
         },
         "pricing": {
-            "input": "0.00000003",
-            "output": "0.000000089",
-            "input_cache_read": "0.000000015",
+            "input": "0.000000036",
+            "output": "0.000000107",
+            "input_cache_read": "0.000000018",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -7276,30 +7281,32 @@
         },
         "limit": {
             "context": 262144,
-            "output": 40960
+            "output": 65536
         },
         "pricing": {
-            "input": "0.000000079",
-            "output": "0.000000117",
-            "input_cache_read": "0.000000071",
+            "input": "0.00000008",
+            "output": "0.00000013",
+            "input_cache_read": "0.00000004",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
+            "temperature",
+            "top_p",
+            "top_k",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
             "tool_choice",
-            "temperature",
-            "top_p",
-            "top_k",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "max_tokens",
-            "max_completion_tokens"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "gpt-5.4-pro": {
