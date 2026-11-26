@@ -135,7 +135,7 @@
         "name": "Inkling 2 Mini",
         "author": "thinkingmachines",
         "reasoning": true,
-        "tool_call": false,
+        "tool_call": true,
         "release_date": null,
         "modalities": {
             "input": [
@@ -148,30 +148,30 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 65536
         },
         "pricing": {
-            "input": "0.000000075",
-            "output": "0.0000003",
-            "input_cache_read": "0.000000015",
+            "input": "0.00000002625",
+            "output": "0.000000105",
+            "input_cache_read": "0.000000013125",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "top_k",
+            "stop",
             "seed",
-            "min_p",
-            "logit_bias",
+            "max_tokens",
             "response_format",
-            "structured_outputs"
+            "structured_outputs",
+            "tools",
+            "tool_choice"
         ]
     },
     "daisyrose-27b": {
@@ -1537,7 +1537,7 @@
     "deepseek-v4.1-flash-1017": {
         "oid": "deepseek/deepseek-v4.1-flash-1017",
         "hf_slug": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-        "name": "DeepSeek V4.1 Flash 1017 (batch)",
+        "name": "DeepSeek V4.1 Flash 1017",
         "author": "deepseek",
         "reasoning": true,
         "tool_call": true,
@@ -1553,27 +1553,28 @@
         },
         "limit": {
             "context": 1048576,
-            "output": null
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.000000035",
-            "output": "0.000000149",
-            "input_cache_read": "0.0000000029",
+            "input": "0.000000036",
+            "output": "0.0000005",
+            "input_cache_read": "0.00000001",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
+            "top_k",
+            "min_p",
             "frequency_penalty",
             "presence_penalty",
-            "top_k",
             "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
             "logit_bias",
-            "min_p",
             "response_format",
             "structured_outputs",
             "tools",
@@ -1889,77 +1890,6 @@
             "tool_choice",
             "logprobs",
             "top_logprobs"
-        ]
-    },
-    "pareto-26.10": {
-        "oid": "unbiased/pareto-26.10",
-        "hf_slug": null,
-        "name": "Pareto 26.10",
-        "author": "unbiased",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 1048576,
-            "output": 131072
-        },
-        "pricing": {
-            "input": "0.0000008",
-            "output": "0.0000032",
-            "input_cache_read": "0.00000003",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "tools",
-            "tool_choice"
-        ]
-    },
-    "pareto-26.9": {
-        "oid": "unbiased/pareto-26.9",
-        "hf_slug": null,
-        "name": "Pareto 26.9",
-        "author": "unbiased",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text",
-                "image"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 262144,
-            "output": 131072
-        },
-        "pricing": {
-            "input": "0.0000025",
-            "output": "0.0000075",
-            "input_cache_read": "0.00000025",
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "tools",
-            "tool_choice",
-            "response_format"
         ]
     },
     "lfm-2.5-24b-a2b": {
@@ -4543,12 +4473,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 393216
+            "output": 1048576
         },
         "pricing": {
-            "input": "0.0000000999",
-            "output": "0.000005",
-            "input_cache_read": "0.0000000999",
+            "input": "0.000000111",
+            "output": "0.00000444",
+            "input_cache_read": "0.000000097",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -4558,15 +4488,19 @@
             "top_p",
             "top_k",
             "min_p",
-            "stop",
-            "max_tokens",
-            "logit_bias",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
+            "stop",
+            "seed",
+            "max_tokens",
+            "logit_bias",
+            "response_format",
+            "structured_outputs",
             "tools",
             "tool_choice",
-            "response_format"
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "grok-4.6": {
@@ -8631,7 +8565,7 @@
             ]
         },
         "limit": {
-            "context": 200000,
+            "context": 131072,
             "output": 131072
         },
         "pricing": {
@@ -9053,7 +8987,7 @@
         "pricing": {
             "input": "0.0000003",
             "output": "0.0000009",
-            "input_cache_read": "0.000000055",
+            "input_cache_read": "0.00000005",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -9062,15 +8996,9 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "top_k",
-            "repetition_penalty",
-            "tools",
             "tool_choice",
-            "response_format"
+            "tools",
+            "top_k"
         ]
     },
     "gpt-5.1-codex-max": {
@@ -10928,14 +10856,9 @@
             "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
-            "top_k",
-            "repetition_penalty",
             "tools",
             "tool_choice",
+            "top_k",
             "response_format"
         ]
     },
@@ -11365,28 +11288,24 @@
         },
         "limit": {
             "context": 131072,
-            "output": 98304
+            "output": 131072
         },
         "pricing": {
-            "input": "0.00000013",
-            "output": "0.00000085",
-            "input_cache_read": "0.000000025",
+            "input": "0.00000014",
+            "output": "0.00000086",
+            "input_cache_read": null,
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "max_tokens",
             "temperature",
             "top_p",
-            "stop",
-            "frequency_penalty",
-            "presence_penalty",
-            "seed",
             "top_k",
-            "repetition_penalty",
+            "frequency_penalty",
             "tools",
-            "tool_choice"
+            "tool_choice",
+            "max_tokens"
         ]
     },
     "qwen3-235b-a22b-thinking-2507": {
@@ -11639,6 +11558,49 @@
             "presence_penalty",
             "top_k",
             "response_format"
+        ]
+    },
+    "deepseek-r1t2-chimera": {
+        "oid": "tngtech/deepseek-r1t2-chimera",
+        "hf_slug": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+        "name": "DeepSeek R1T2 Chimera",
+        "author": "tngtech",
+        "reasoning": true,
+        "tool_call": false,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 32768
+        },
+        "pricing": {
+            "input": "0.000001",
+            "output": "0.000002625",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "min_p",
+            "seed",
+            "response_format",
+            "structured_outputs"
         ]
     },
     "morph-v3-large": {
@@ -13905,6 +13867,42 @@
             "structured_outputs"
         ]
     },
+    "llama-3.1-70b-it": {
+        "oid": "meta-llama/llama-3.1-70b-instruct",
+        "hf_slug": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "name": "Llama 3.1 70B Instruct",
+        "author": "meta-llama",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 8192
+        },
+        "pricing": {
+            "input": "0.00000072",
+            "output": "0.00000072",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "stop",
+            "tools",
+            "tool_choice"
+        ]
+    },
     "llama-3.1-8b-it": {
         "oid": "meta-llama/llama-3.1-8b-instruct",
         "hf_slug": "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -13944,42 +13942,6 @@
             "min_p",
             "logit_bias",
             "response_format"
-        ]
-    },
-    "llama-3.1-70b-it": {
-        "oid": "meta-llama/llama-3.1-70b-instruct",
-        "hf_slug": "meta-llama/Meta-Llama-3.1-70B-Instruct",
-        "name": "Llama 3.1 70B Instruct",
-        "author": "meta-llama",
-        "reasoning": false,
-        "tool_call": true,
-        "release_date": null,
-        "modalities": {
-            "input": [
-                "text"
-            ],
-            "output": [
-                "text"
-            ]
-        },
-        "limit": {
-            "context": 131072,
-            "output": 8192
-        },
-        "pricing": {
-            "input": "0.00000072",
-            "output": "0.00000072",
-            "input_cache_read": null,
-            "input_cache_write": null
-        },
-        "supported_parameters": [
-            "max_tokens",
-            "temperature",
-            "top_p",
-            "top_k",
-            "stop",
-            "tools",
-            "tool_choice"
         ]
     },
     "mistral-nemo": {
