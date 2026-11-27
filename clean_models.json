@@ -1,4 +1,51 @@
 {
+    "lingsante-3.1-air-vl": {
+        "oid": "inclusionai/lingsante-3.1-air-vl",
+        "hf_slug": "inclusionAI/LingSante-3.1-air-VL",
+        "name": "LingSante 3.1 Air VL",
+        "author": "inclusionai",
+        "reasoning": true,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text",
+                "image"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 32768
+        },
+        "pricing": {
+            "input": "0.00000006",
+            "output": "0.00000018",
+            "input_cache_read": "0.000000012",
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
+            "tools",
+            "tool_choice",
+            "structured_outputs",
+            "response_format"
+        ]
+    },
     "solar-pro-4-contributor": {
         "oid": "upstage/solar-pro-4-contributor",
         "hf_slug": null,
@@ -1246,7 +1293,7 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 131072
+            "output": 1048576
         },
         "pricing": {
             "input": "0.00000007",
@@ -4473,12 +4520,12 @@
         },
         "limit": {
             "context": 1048576,
-            "output": 1048576
+            "output": 393216
         },
         "pricing": {
-            "input": "0.000000111",
-            "output": "0.00000444",
-            "input_cache_read": "0.000000097",
+            "input": "0.0000000999",
+            "output": "0.000005",
+            "input_cache_read": "0.0000000999",
             "input_cache_write": null
         },
         "supported_parameters": [
@@ -4488,19 +4535,15 @@
             "top_p",
             "top_k",
             "min_p",
+            "stop",
+            "max_tokens",
+            "logit_bias",
             "frequency_penalty",
             "presence_penalty",
             "repetition_penalty",
-            "stop",
-            "seed",
-            "max_tokens",
-            "logit_bias",
-            "response_format",
-            "structured_outputs",
             "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "response_format"
         ]
     },
     "grok-4.6": {
@@ -6632,31 +6675,33 @@
         },
         "limit": {
             "context": 262144,
-            "output": 235929
+            "output": 262144
         },
         "pricing": {
             "input": "0.00000005",
-            "output": "0.0000007",
-            "input_cache_read": "0.000000025",
+            "output": "0.00000069",
+            "input_cache_read": "0.000000024",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
             "temperature",
-            "top_p",
-            "top_k",
+            "max_tokens",
             "frequency_penalty",
+            "logit_bias",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "stop",
             "seed",
-            "max_tokens",
+            "stop",
+            "top_k",
+            "top_p",
             "response_format",
             "structured_outputs",
+            "tools",
             "logprobs",
             "top_logprobs",
-            "tools",
             "tool_choice"
         ]
     },
@@ -7674,32 +7719,30 @@
         },
         "limit": {
             "context": 262144,
-            "output": 65536
+            "output": 40960
         },
         "pricing": {
-            "input": "0.00000008",
-            "output": "0.00000013",
-            "input_cache_read": "0.00000004",
+            "input": "0.00000006",
+            "output": "0.000000088",
+            "input_cache_read": "0.000000054",
             "input_cache_write": null
         },
         "supported_parameters": [
             "reasoning",
             "include_reasoning",
-            "temperature",
-            "top_p",
-            "top_k",
-            "frequency_penalty",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "seed",
-            "max_tokens",
             "response_format",
             "structured_outputs",
             "tools",
             "tool_choice",
-            "logprobs",
-            "top_logprobs"
+            "temperature",
+            "top_p",
+            "top_k",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "max_tokens",
+            "max_completion_tokens"
         ]
     },
     "gpt-5.4-pro": {
@@ -10379,7 +10422,7 @@
             ]
         },
         "limit": {
-            "context": 204800,
+            "context": 202752,
             "output": 16384
         },
         "pricing": {
@@ -10730,6 +10773,50 @@
             "logit_bias",
             "structured_outputs",
             "response_format"
+        ]
+    },
+    "kimi-k2-0905": {
+        "oid": "moonshotai/kimi-k2-0905",
+        "hf_slug": "moonshotai/Kimi-K2-Instruct-0905",
+        "name": "Kimi K2 0905",
+        "author": "moonshotai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 262144,
+            "output": 98304
+        },
+        "pricing": {
+            "input": "0.0000006",
+            "output": "0.0000025",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "response_format",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
+            "tools",
+            "tool_choice",
+            "structured_outputs",
+            "logprobs",
+            "top_logprobs"
         ]
     },
     "hermes-4-405b": {
@@ -11521,6 +11608,46 @@
             "logit_bias",
             "structured_outputs",
             "response_format"
+        ]
+    },
+    "kimi-k2": {
+        "oid": "moonshotai/kimi-k2",
+        "hf_slug": "moonshotai/Kimi-K2-Instruct",
+        "name": "Kimi K2 0711",
+        "author": "moonshotai",
+        "reasoning": false,
+        "tool_call": true,
+        "release_date": null,
+        "modalities": {
+            "input": [
+                "text"
+            ],
+            "output": [
+                "text"
+            ]
+        },
+        "limit": {
+            "context": 131072,
+            "output": 98304
+        },
+        "pricing": {
+            "input": "0.00000057",
+            "output": "0.0000023",
+            "input_cache_read": null,
+            "input_cache_write": null
+        },
+        "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "seed",
+            "top_k",
+            "repetition_penalty",
+            "tools",
+            "tool_choice"
         ]
     },
     "dolphin-mistral-24b-venice-edition": {
